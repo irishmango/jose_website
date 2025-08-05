@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('fonts/CenturyGothic.woff2') format('woff2'),
+        url('fonts/CenturyGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Contact Section */
 .contact {
     width: 100vw;
@@ -25,7 +34,7 @@
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     text-orientation: mixed;
-    font-size: 2.8rem;
+    font-size: 4rem;
     letter-spacing: 0.18em;
     color: #fff;
     font-weight: 400;
@@ -217,17 +226,17 @@
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     text-orientation: mixed;
-    font-size: 2.8rem;
+    font-size: 4rem;
     letter-spacing: 0.18em;
     color: #fff;
     font-weight: 400;
-    margin-left: 48px;
+    margin-right: 48px;
     line-height: 1;
     text-align: center;
     min-width: 60px;
     user-select: none;
     position: sticky;
-    right: 0;
+    left: 0;
     top: 0;
     align-self: flex-start;
     z-index: 2;
@@ -336,7 +345,7 @@
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     text-orientation: mixed;
-    font-size: 2.8rem;
+    font-size: 4rem;
     letter-spacing: 0.18em;
     color: #eaeaea;
     font-weight: 400;
@@ -383,7 +392,6 @@
 
 .projects-container {
     display: flex;
-    flex-direction: row-reverse;
     max-width: 1100px;
     width: 100%;
     margin: 0 32px;
@@ -393,7 +401,7 @@
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     text-orientation: mixed;
-    font-size: 2.8rem;
+    font-size: 4rem;
     letter-spacing: 0.18em;
     color: #fff;
     font-weight: 400;
@@ -432,31 +440,9 @@ section {
 }
 
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Century Gothic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.cover-bar {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 16px;
-    left: 32px;
-    color: #d1c6e7;
-    font-size: 16px;
-    letter-spacing: 0.05em;
-    z-index: 10;
-    background: none;
-    padding: 0;
-}
-
-.cover-dot {
-    font-size: 14px;
-    margin-right: 6px;
-}
-
-.cover-label {
-    font-size: 15px;
-}
 
 .main {
     position: relative;
@@ -511,7 +497,7 @@ body {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     text-orientation: mixed;
-    font-size: 2.8rem;
+    font-size: 4rem;
     letter-spacing: 0.18em;
     color: #eaeaea;
     font-weight: 400;
@@ -527,25 +513,7 @@ body {
     z-index: 2;
 }
 
-.projects-label {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    text-orientation: mixed;
-    font-size: 2.8rem;
-    letter-spacing: 0.18em;
-    color: #fff;
-    font-weight: 400;
-    margin-left: 48px;
-    line-height: 1;
-    text-align: center;
-    min-width: 60px;
-    user-select: none;
-    position: sticky;
-    right: 0;
-    top: 48px;
-    align-self: flex-start;
-    z-index: 2;
-}
+
 
 .bio-content {
     display: flex;
