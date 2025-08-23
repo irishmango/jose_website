@@ -7,10 +7,6 @@
     box-sizing: border-box;
 }
 
-section {
-    border: #bac154 2px solid;
-
-}
 
 .section-label {
     writing-mode: vertical-rl;
@@ -84,7 +80,6 @@ section {
     display: flex;
     flex-direction: row;
     align-items: start;
-    border: #c15454 2px solid;
     margin: 45px;
 
 }
@@ -98,14 +93,11 @@ section {
 
 
 .contact-content {
-
-    border: #25680e 2px solid;
     display: flex;
     flex-direction: row;
     flex: 1;
     gap: 48px;
     align-items: flex-start;
-
 }
 
 .contact-info {
@@ -223,12 +215,10 @@ section {
     display: flex;
     flex-direction: row;
     align-items: start;
-    border: #c15454 2px solid;
     margin: 45px;
 }
 
 .reviews-content {
-    border: #25680e 2px solid;
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -237,7 +227,6 @@ section {
 }
 
 .reviews-list {
-    border: #3939e2 2px solid;
     display: flex;
     flex-direction: column;
     gap: 64px;
@@ -296,12 +285,10 @@ section {
     display: flex;
     flex-direction: row;
     align-items: start;
-    border: #c15454 2px solid;
     margin: 45px;
 }
 
 .calender-content {
-    border: #25680e 2px solid;
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -420,12 +407,10 @@ section {
     display: flex;
     flex-direction: row;
     align-items: start;
-    border: #c15454 2px solid;
     margin: 45px;
 }
 
 .projects-content {
-    border: #25680e 2px solid;
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -536,7 +521,6 @@ section {
     display: flex;
     flex-direction: row;
     align-items: start;
-    border: #c15454 2px solid;
     margin: 45px;
 }
 
@@ -544,7 +528,6 @@ section {
 
 
 .bio-content {
-    border: #25680e 2px solid;
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -654,7 +637,7 @@ section {
 }
 
 .menu-btn:hover {
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, 0.089);
 }
 
 .close-btn {
@@ -720,4 +703,17 @@ section {
 
 .drawer-nav a:hover {
     color: #bdbdbd;
+}
+
+/* DEBUG */
+* {
+    outline: 1px solid magenta !important;
+}
+
+.section-container,
+.projects-container,
+.reviews-container,
+.calender-container,
+.contact-container {
+    border: 2px dashed lime !important;
 }
