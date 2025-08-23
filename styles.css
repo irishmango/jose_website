@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+section {
+    border: #bac154 2px solid;
+
+}
+
 .section-label {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
@@ -67,12 +72,10 @@ section {
 .contact {
     width: 100vw;
     min-height: 100vh;
-    background: #232323;
+    background: #181818;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    /* padding-top: 48px; */
     box-sizing: border-box;
     position: relative;
 }
@@ -82,6 +85,8 @@ section {
     flex-direction: row;
     align-items: start;
     border: #c15454 2px solid;
+    margin: 45px;
+
 }
 
 .contact-wrapper {
@@ -146,7 +151,7 @@ section {
 }
 
 .contact-image-placeholder {
-    width: 320px;
+    width: 20px;
     height: 220px;
     background: #888;
     opacity: 0.45;
@@ -198,16 +203,18 @@ section {
     flex: 1;
 }
 
+
+
+
+
 /* Reviews Section */
 .reviews {
     width: 100vw;
     min-height: 100vh;
     background: #181818;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    padding-top: 48px;
-    padding-bottom: 48px;
     box-sizing: border-box;
     position: relative;
 }
@@ -298,7 +305,7 @@ section {
     display: flex;
     flex-direction: row;
     flex: 1;
-    gap: 48px;
+    /* gap: 48px; */
     align-items: flex-start;
 }
 
@@ -359,7 +366,7 @@ section {
 }
 
 .calender-image-placeholder {
-    width: 320px;
+    width: 20px;
     height: 320px;
     background: #888;
     opacity: 0.45;
@@ -375,13 +382,10 @@ section {
     min-height: 100vh;
     background: #181818;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    padding-top: 0px;
-    padding-bottom: 48px;
     box-sizing: border-box;
     position: relative;
-    /* border-top: 4px solid #3a3a3a; */
 }
 
 
@@ -405,18 +409,17 @@ section {
     min-height: 100vh;
     background: #181818;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    padding-top: 48px;
-    padding-bottom: px;
     box-sizing: border-box;
     position: relative;
-    /* border-top: 4px solid #3a3a3a; */
+
 }
 
 .projects-container {
-    position: relative;
     display: flex;
+    flex-direction: row;
+    align-items: start;
     border: #c15454 2px solid;
     margin: 45px;
 }
@@ -523,10 +526,8 @@ section {
     min-height: 100vh;
     background: #181818;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    padding-top: 48px;
-    padding-bottom: 48px;
     box-sizing: border-box;
     position: relative;
 }
