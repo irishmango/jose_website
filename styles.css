@@ -69,7 +69,7 @@ section {
     align-items: flex-start;
 }
 
-.contact-label {
+.section-label {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     text-orientation: mixed;
@@ -435,6 +435,16 @@ section {
     display: flex;
 }
 
+.projects-content {
+
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 48px;
+    align-items: flex-start;
+
+}
+
 .projects-label {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
@@ -644,8 +654,8 @@ section {
 
 .main-title {
     position: absolute;
-    left: 32px;
-    bottom: 60px;
+    left: 52px;
+    bottom: 80px;
     color: #111;
     z-index: 3;
     pointer-events: auto;
@@ -666,7 +676,7 @@ section {
 }
 
 .menu-btn {
-    position: absolute;
+    position: fixed;
     top: 32px;
     right: 32px;
     color: #fff;
@@ -701,7 +711,7 @@ section {
     font-weight: 400;
     letter-spacing: 0.12em;
     cursor: pointer;
-    z-index: 100;
+    z-index: 1001;
     pointer-events: auto;
     transition: background 0.2s;
     border: none;
