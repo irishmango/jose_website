@@ -1,10 +1,30 @@
-/* Shared Section Container */
+/* Shared Section styles */
 .section-container {
     max-width: 1100px;
     width: 100%;
     margin: 0 auto;
     padding: 0 0px;
     box-sizing: border-box;
+}
+
+.section-label {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-orientation: mixed;
+    font-size: 4rem;
+    letter-spacing: 0.18em;
+    color: #fff;
+    font-weight: 400;
+    margin-right: 48px;
+    line-height: 1;
+    text-align: center;
+    min-width: 60px;
+    user-select: none;
+    position: sticky;
+    left: 0;
+    top: 0;
+    align-self: flex-start;
+    z-index: 2;
 }
 
 @font-face {
@@ -26,7 +46,6 @@ body {
 section {
     margin: 0;
     padding: 0;
-    /* remove height: 100% */
 }
 
 
@@ -61,6 +80,8 @@ section {
 .contact-container {
     display: flex;
     flex-direction: row;
+    align-items: start;
+    border: #c15454 2px solid;
 }
 
 .contact-wrapper {
@@ -69,33 +90,17 @@ section {
     align-items: flex-start;
 }
 
-.section-label {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    text-orientation: mixed;
-    font-size: 4rem;
-    letter-spacing: 0.18em;
-    color: #fff;
-    font-weight: 400;
-    margin-right: 48px;
-    line-height: 1;
-    text-align: center;
-    min-width: 60px;
-    user-select: none;
-    position: sticky;
-    left: 0;
-    top: 0;
-    align-self: flex-start;
-    z-index: 2;
-}
+
 
 .contact-content {
+
+    border: #25680e 2px solid;
     display: flex;
     flex-direction: row;
     flex: 1;
     gap: 48px;
-    width: 100%;
     align-items: flex-start;
+
 }
 
 .contact-info {
@@ -210,10 +215,22 @@ section {
 .reviews-container {
     display: flex;
     flex-direction: row;
-    position: relative;
+    align-items: start;
+    border: #c15454 2px solid;
+    margin: 45px;
+}
+
+.reviews-content {
+    border: #25680e 2px solid;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 48px;
+    align-items: flex-start;
 }
 
 .reviews-list {
+    border: #3939e2 2px solid;
     display: flex;
     flex-direction: column;
     gap: 64px;
@@ -271,14 +288,18 @@ section {
 .calender-container {
     display: flex;
     flex-direction: row;
+    align-items: start;
+    border: #c15454 2px solid;
+    margin: 45px;
 }
 
 .calender-content {
+    border: #25680e 2px solid;
     display: flex;
     flex-direction: row;
     flex: 1;
     gap: 48px;
-    width: 100%;
+    align-items: flex-start;
 }
 
 .calender-list {
@@ -396,10 +417,12 @@ section {
 .projects-container {
     position: relative;
     display: flex;
+    border: #c15454 2px solid;
+    margin: 45px;
 }
 
 .projects-content {
-
+    border: #25680e 2px solid;
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -410,6 +433,8 @@ section {
 
 
 .projects-gallery {
+    width: 100%;
+    /* match the projects-container width */
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -417,20 +442,16 @@ section {
 }
 
 .projects-gallery img {
-    width: 600px;
-    height: 80px;
-    max-width: 90vw;
+    display: block;
+    width: 100%;
+    height: 120px;
     border-radius: 4px;
-    /* box-shadow: 0 4px 32px rgba(0, 0, 0, 0.35);
-    background: #111; */
     object-fit: cover;
     transition: height 0.4s ease;
-    /* Ensure transition on transform for smooth scaling */
 }
 
 .projects-gallery img:hover {
-    height: 200px;
-
+    height: 200px
 }
 
 /* .projects-gallery img:not(:hover) {
@@ -440,6 +461,12 @@ section {
 .project-image {
     position: relative;
     display: inline-block;
+}
+
+.project-image,
+.project-image a {
+    display: block;
+    width: 100%;
 }
 
 .project-title {
@@ -508,17 +535,21 @@ section {
     display: flex;
     flex-direction: row;
     align-items: start;
+    border: #c15454 2px solid;
+    margin: 45px;
 }
 
 
 
 
 .bio-content {
+    border: #25680e 2px solid;
     display: flex;
     flex-direction: row;
     flex: 1;
     gap: 48px;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 .bio-text {
@@ -534,7 +565,7 @@ section {
 
 .bio-photo img {
     display: block;
-    max-width: 320px;
+    max-width: 520px;
     width: 100%;
     height: auto;
     border-radius: 4px;
