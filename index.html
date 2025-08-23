@@ -5,14 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="adaptive_styles.css">
     <script src="script.js" defer></script>
     <title>José Cortes</title>
 </head>
 
 <body>
-    <div>
+    <div class="page-wrapper">
         <button class="menu-btn">MENU</button>
-        <section class="hero">
+        <div class="drawer" id="drawer">
+            <button class="close-btn" id="closeDrawer">CLOSE</button>
+            <nav class="drawer-nav">
+                <a href="#biography">BIOGRAPHY</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#calender">CALENDER</a>
+                <a href="#reviews">REVIEWS</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </div>
+        <section class="hero" id="hero">
             <div class="main">
                 <img class="main-image" src="assets/lovelease_4.jpg" alt="Opera Scene">
                 <div class="main-content">
@@ -24,8 +35,8 @@
             </div>
         </section>
 
-        <section class="biography">
-            <div class="bio-container">
+        <section class="biography" id="biography">
+            <div class="section-container bio-container">
                 <div class="bio-label">BIOGRAPHY</div>
                 <div class="bio-content">
                     <div class="bio-text">
@@ -52,8 +63,8 @@
             </div>
         </section>
 
-        <section class="projects">
-            <div class="projects-container">
+        <section class="projects" id="projects">
+            <div class="section-container projects-container">
                 <div class="projects-label">PROJECTS</div>
                 <div class="projects-content">
                     <div class="projects-gallery">
@@ -78,8 +89,8 @@
             </div>
         </section>
 
-        <section class="calender">
-            <div class="calender-container">
+        <section class="calender" id="calender">
+            <div class="section-container calender-container">
                 <div class="calender-label">CALENDER</div>
                 <div class="calender-content">
                     <div class="calender-list">
@@ -137,8 +148,8 @@
             </div>
         </section>
 
-        <section class="reviews">
-            <div class="reviews-container">
+        <section class="reviews" id="reviews">
+            <div class="section-container reviews-container">
                 <div class="reviews-label">REVIEWS</div>
                 <div class="reviews-list">
                     <div class="review-card">
@@ -206,34 +217,49 @@
             </div>
         </section>
 
-        <section class="contact">
-            <div class="contact-container">
-                <div class="contact-label">CONTACT</div>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-name">JOSÉ CORTES</div>
-                        <div class="contact-role">opera director</div>
-                        <div class="contact-details">
-                            <div>jose.cortes@the-artist.digital<br>+49 171 185 8767</div>
+        <section class="contact" id="contact">
+            <div class="section-container contact-container">
+                <div class="contact-wrapper">
+                    <div class="contact-label">CONTACT</div>
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <div class="contact-name">JOSÉ CORTES</div>
+                            <div class="contact-role">opera director</div>
+                            <div class="contact-details">
+                                <div>jose.cortes@the-artist.digital<br>+49 171 185 8767</div>
+                            </div>
+                            <div class="contact-rep">
+                                <span class="contact-rep-label">representation:</span> Agency Sermodus<br>
+                                mikel@sermodus.com
+                            </div>
                         </div>
-                        <div class="contact-rep">
-                            <span class="contact-rep-label">representation:</span> Agency Sermodus<br>
-                            mikel@sermodus.com
-                        </div>
+                        <div class="contact-image-placeholder"></div>
                     </div>
-                    <div class="contact-image-placeholder"></div>
                 </div>
             </div>
         </section>
 
         <footer class="footer">
             <div class="footer-links">
-                <a href="#" class="footer-link">imprint</a>
-                <a href="#" class="footer-link">privacy policy</a>
+                <a href="./imprint.html" class="footer-link">imprint</a>
+                <a href="./privacy_policy.html" class="footer-link">privacy policy</a>
             </div>
             <div class="footer-copyright">©2025 JOSÉ CORTES</div>
         </footer>
     </div>
+
+    <div id="viewport-size"
+        style="position: fixed; bottom: 10px; right: 10px; background: #000; color: #fff; padding: 4px 8px; font-size: 12px; z-index: 9999; font-family: monospace;">
+    </div>
+    <script>
+        const sizeDisplay = document.getElementById('viewport-size');
+        function updateSize() {
+            sizeDisplay.textContent = `${window.innerWidth}px × ${window.innerHeight}px`;
+        }
+        window.addEventListener('resize', updateSize);
+        updateSize();
+    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
