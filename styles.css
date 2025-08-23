@@ -1,3 +1,12 @@
+/* Shared Section Container */
+.section-container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0px;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'Century Gothic';
     src: url('fonts/CenturyGothic.woff2') format('woff2'),
@@ -43,8 +52,8 @@ section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-    padding-top: 48px;
+    justify-content: center;
+    /* padding-top: 48px; */
     box-sizing: border-box;
     position: relative;
 }
@@ -52,10 +61,12 @@ section {
 .contact-container {
     display: flex;
     flex-direction: row;
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 32px;
-    flex: 1;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 .contact-label {
@@ -141,6 +152,13 @@ section {
     margin-top: 16px;
 }
 
+
+
+
+
+
+
+
 .footer {
     width: 100vw;
     display: flex;
@@ -192,9 +210,6 @@ section {
 .reviews-container {
     display: flex;
     flex-direction: row;
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 32px;
     position: relative;
 }
 
@@ -274,9 +289,6 @@ section {
 .calender-container {
     display: flex;
     flex-direction: row;
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 32px;
 }
 
 .calender-content {
@@ -421,9 +433,6 @@ section {
 .projects-container {
     position: relative;
     display: flex;
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 32px;
 }
 
 .projects-label {
@@ -545,9 +554,6 @@ section {
     display: flex;
     flex-direction: row;
     align-items: start;
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 32px;
 }
 
 .bio-label {
@@ -681,4 +687,69 @@ section {
 
 .menu-btn:hover {
     background: rgba(0, 0, 0, 0.45);
+}
+
+.close-btn {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    color: #fff;
+    background: none;
+    padding: 8px 24px;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    cursor: pointer;
+    z-index: 100;
+    pointer-events: auto;
+    transition: background 0.2s;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.close-btn:hover {
+    color: #bdbdbd;
+}
+
+.drawer {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 20vw;
+    height: 100vh;
+    background: #111;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: left 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.drawer.open {
+    right: 0;
+}
+
+.drawer-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    font-size: 1rem;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.drawer-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+
+.drawer-nav a:hover {
+    color: #bdbdbd;
 }

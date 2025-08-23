@@ -1,0 +1,181 @@
+/* Small phones (xs) */
+@media (max-width: 479px) {
+
+    /* Tight spacing, full-width layout */
+    .bio-content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .bio-photo {
+        margin-bottom: 24px;
+    }
+
+    .bio-photo img {
+        width: 100%;
+        height: auto;
+        max-width: none;
+    }
+}
+
+/* Phones (sm) */
+@media (min-width: 480px) and (max-width: 767px) {
+
+    /* Adjust gallery/grid, font size down */
+    .bio-content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .bio-photo {
+        margin-bottom: 24px;
+    }
+
+    .bio-photo img {
+        width: 100%;
+        height: auto;
+        max-width: none;
+    }
+}
+
+/* Tablets (md) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Reflow nav, stack elements */
+}
+
+/* Small laptops (lg) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    /* Minor scaling, reduce padding */
+
+    .bio-container,
+    .projects-container,
+    .reviews-container,
+    .calender-container,
+    .contact-container {
+        max-width: 88%;
+    }
+
+    .bio-text,
+    .review-text,
+    .event-location,
+    .contact-details {
+        font-size: 1.05rem;
+    }
+
+    .bio-text {
+        font-size: 1.1rem;
+        max-width: 68%;
+    }
+
+    .review-title,
+    .event-title,
+    .contact-name {
+        font-size: 1.25rem;
+    }
+
+    .bio-photo img,
+    .calender-image-placeholder,
+    .contact-image-placeholder {
+        max-width: 420px;
+    }
+
+    .projects-gallery img {
+        width: 800px;
+        height: 80px;
+    }
+
+    .projects-gallery img:hover {
+        height: 195px;
+    }
+}
+
+/* Desktops (xl) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+    /* Default layout scale */
+
+    .bio-container,
+    .projects-container,
+    .reviews-container,
+    .calender-container,
+    .contact-container {
+        max-width: 90%;
+    }
+
+    .bio-text,
+    .review-text,
+    .event-location,
+    .contact-details {
+        font-size: 1.05rem;
+    }
+
+    .bio-text {
+        font-size: 1.15rem;
+        max-width: 65%;
+    }
+
+    .review-title,
+    .event-title,
+    .contact-name {
+        font-size: 1.3rem;
+    }
+
+    .bio-photo img,
+    .calender-image-placeholder,
+    .contact-image-placeholder {
+        max-width: 440px;
+    }
+
+    .projects-gallery img {
+        width: 1050px;
+        height: 90px;
+    }
+
+    .projects-gallery img:hover {
+        height: 210px;
+    }
+}
+
+/* Large desktops (2xl) */
+@media (min-width: 1536px) {
+
+    .bio-container,
+    .projects-container,
+    .reviews-container,
+    .calender-container,
+    .contact-container {
+        max-width: 95%;
+    }
+
+    .bio-text,
+    .review-text,
+    .event-location,
+    .contact-details {
+        font-size: 1.15rem;
+    }
+
+    .bio-text {
+        font-size: 1.25rem;
+        max-width: 60%;
+    }
+
+    .review-title,
+    .event-title,
+    .contact-name {
+        font-size: 1.4rem;
+    }
+
+    .bio-photo img,
+    .calender-image-placeholder,
+    .contact-image-placeholder {
+        max-width: 500px;
+    }
+
+    .projects-gallery img {
+        width: 1355px;
+        height: 100px;
+    }
+
+    .projects-gallery img:hover {
+        height: 240px;
+    }
+}
