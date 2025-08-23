@@ -634,6 +634,9 @@ section {
     border: none;
     text-transform: uppercase;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .menu-btn:hover {
@@ -674,7 +677,7 @@ section {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    transition: left 0.3s ease-in-out;
+    transition: right 0.35s ease-in-out;
     z-index: 999;
 }
 
@@ -705,8 +708,17 @@ section {
     color: #bdbdbd;
 }
 
+
+
+
+
+
+
+
+
+
 /* DEBUG */
-* {
+/* * {
     outline: 1px solid magenta !important;
 }
 
@@ -717,3 +729,7 @@ section {
 .contact-container {
     border: 2px dashed lime !important;
 }
+
+.menu-btn .bar {
+    display: none;
+} */

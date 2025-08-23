@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="stylesheet" href="adaptive_styles.css"> -->
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="adaptive_styles.css">
     <title>José Cortes</title>
 </head>
 
 <body>
     <div class="page-wrapper">
-        <button class="menu-btn">MENU</button>
+        <button class="menu-btn" aria-label="Menu">
+            <span class="menu-label">MENU</span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
         <div class="drawer" id="drawer">
             <button class="close-btn" id="closeDrawer">CLOSE</button>
             <nav class="drawer-nav">

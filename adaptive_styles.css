@@ -1,181 +1,244 @@
-/* Small phones (xs) */
-@media (max-width: 479px) {
+/*
+  Adaptive styles
+  - Keep desktop & tablet typography as-is
+  - Apply tweaks only on small screens (mobile)
+*/
 
-    /* Tight spacing, full-width layout */
-    .bio-content {
-        flex-direction: column-reverse;
-        align-items: center;
+
+/* Mobile (≤ 767px) */
+@media (max-width: 767px) {
+
+    /* Global spacing */
+    .section-container,
+    .projects-container,
+    .reviews-container,
+    .calender-container,
+    .contact-container,
+    .bio-container {
+        margin: 45px;
+        /* center horizontally, reduce vertical spacing */
     }
 
-    .bio-photo {
-        margin-bottom: 24px;
+    /* Vertical section label */
+    .section-label {
+        font-size: 2.4rem;
+        /* was 4rem */
+        min-width: 44px;
+        /* slimmer rail */
+        margin-right: 24px;
+        /* tighter gap to content */
+    }
+
+    /* Hero title */
+    .main-title {
+        left: 24px;
+        bottom: 56px;
+    }
+
+    .main-title .name {
+        font-size: 1.6rem;
+    }
+
+    .main-title .subtitle {
+        font-size: 0.9rem;
+    }
+
+    /* Biography layout → column */
+    .bio-content {
+        flex-direction: column-reverse;
+        gap: 24px;
+    }
+
+    .bio-text {
+        max-width: none;
+        font-size: 0.95rem;
     }
 
     .bio-photo img {
+        max-width: none;
         width: 100%;
         height: auto;
-        max-width: none;
     }
-}
 
-/* Phones (sm) */
-@media (min-width: 480px) and (max-width: 767px) {
+    /* Projects — keep as-is (optional: reduce hover growth on small screens) */
+    .projects-gallery img {
+        height: 110px;
+        transition: height 0.35s ease;
+    }
 
-    /* Adjust gallery/grid, font size down */
-    .bio-content {
-        flex-direction: column-reverse;
+    .projects-gallery img:hover {
+        height: 170px;
+    }
+
+    /* Calendar layout → column */
+    .calender-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .calender-list {
+        gap: 28px;
+    }
+
+    .calender-event {
+        gap: 16px;
+    }
+
+    .calender-image-placeholder {
+        width: 100%;
+        height: 220px;
+        margin: 16px 0 0 0;
+        /* remove left margin from desktop */
+    }
+
+    /* Contact layout → column */
+    .contact-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .contact-info {
+        margin-top: 0;
+    }
+
+    .contact-image-placeholder {
+        width: 100%;
+        height: 200px;
+        margin: 16px 0 0 0;
+        /* remove left margin */
+    }
+
+    /* Type scale trim for body copy */
+    .review-title {
+        font-size: 1rem;
+    }
+
+    .review-text {
+        font-size: 0.95rem;
+    }
+
+    .event-title {
+        font-size: 1rem;
+    }
+
+    .event-location {
+        font-size: 0.92rem;
+    }
+
+    .contact-name {
+        font-size: 1.05rem;
+    }
+
+    .contact-role,
+    .contact-details,
+    .contact-rep {
+        font-size: 0.95rem;
+    }
+
+    /* Menu button nudge */
+    .menu-btn {
+        top: 16px;
+        right: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
+        width: 32px;
+        height: 22px;
+        padding: 0;
+        gap: 0;
+        z-index: 1002;
     }
 
-    .bio-photo {
-        margin-bottom: 24px;
+    .menu-btn .menu-label {
+        display: none;
     }
 
-    .bio-photo img {
+    .menu-btn .bar {
+        display: block;
         width: 100%;
-        height: auto;
-        max-width: none;
-    }
-}
-
-/* Tablets (md) */
-@media (min-width: 768px) and (max-width: 1023px) {
-    /* Reflow nav, stack elements */
-}
-
-/* Small laptops (lg) */
-@media (min-width: 1024px) and (max-width: 1279px) {
-    /* Minor scaling, reduce padding */
-
-    .bio-container,
-    .projects-container,
-    .reviews-container,
-    .calender-container,
-    .contact-container {
-        max-width: 88%;
+        height: 3px;
+        background: #fff;
+        border-radius: 2px;
+        transition: transform 0.25s ease, opacity 0.25s ease;
+        transform-origin: center;
     }
 
-    .bio-text,
-    .review-text,
-    .event-location,
-    .contact-details {
-        font-size: 1.05rem;
+    .menu-btn.open .bar:nth-child(2) {
+        /* top bar */
+        transform: translateY(9px) rotate(45deg);
     }
 
-    .bio-text {
-        font-size: 1.1rem;
-        max-width: 68%;
+    .menu-btn.open .bar:nth-child(3) {
+        /* middle bar */
+        opacity: 0;
     }
 
-    .review-title,
-    .event-title,
-    .contact-name {
-        font-size: 1.25rem;
+    .menu-btn.open .bar:nth-child(4) {
+        /* bottom bar */
+        transform: translateY(-10px) rotate(-45deg);
     }
 
-    .bio-photo img,
-    .calender-image-placeholder,
-    .contact-image-placeholder {
-        max-width: 420px;
+    .close-btn {
+        display: none;
     }
 
-    .projects-gallery img {
-        width: 800px;
-        height: 80px;
+    .drawer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: -110%;
+        width: 100vw;
+        height: 100vh;
+        background: #111;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: top 0.35s ease-in-out;
+        z-index: 1000;
     }
 
-    .projects-gallery img:hover {
-        height: 195px;
-    }
-}
-
-/* Desktops (xl) */
-@media (min-width: 1280px) and (max-width: 1535px) {
-    /* Default layout scale */
-
-    .bio-container,
-    .projects-container,
-    .reviews-container,
-    .calender-container,
-    .contact-container {
-        max-width: 90%;
+    .drawer.open {
+        top: 0;
     }
 
-    .bio-text,
-    .review-text,
-    .event-location,
-    .contact-details {
-        font-size: 1.05rem;
+    .drawer-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        font-size: 1rem;
+        text-align: center;
+        height: 100%;
+        width: 100%;
     }
 
-    .bio-text {
-        font-size: 1.15rem;
-        max-width: 65%;
+    .drawer-nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 0.1em;
     }
 
-    .review-title,
-    .event-title,
-    .contact-name {
-        font-size: 1.3rem;
-    }
-
-    .bio-photo img,
-    .calender-image-placeholder,
-    .contact-image-placeholder {
-        max-width: 440px;
-    }
-
-    .projects-gallery img {
-        width: 1050px;
-        height: 90px;
-    }
-
-    .projects-gallery img:hover {
-        height: 210px;
-    }
-}
-
-/* Large desktops (2xl) */
-@media (min-width: 1536px) {
-
-    .bio-container,
-    .projects-container,
-    .reviews-container,
-    .calender-container,
-    .contact-container {
-        max-width: 95%;
-    }
-
-    .bio-text,
-    .review-text,
-    .event-location,
-    .contact-details {
-        font-size: 1.15rem;
-    }
-
-    .bio-text {
-        font-size: 1.25rem;
-        max-width: 60%;
-    }
-
-    .review-title,
-    .event-title,
-    .contact-name {
-        font-size: 1.4rem;
-    }
-
-    .bio-photo img,
-    .calender-image-placeholder,
-    .contact-image-placeholder {
-        max-width: 500px;
-    }
-
-    .projects-gallery img {
-        width: 1355px;
-        height: 100px;
-    }
-
-    .projects-gallery img:hover {
-        height: 240px;
+    .close-btn {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        color: #fff;
+        background: none;
+        padding: 8px 24px;
+        border-radius: 2px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: 0.12em;
+        cursor: pointer;
+        z-index: 1001;
+        pointer-events: auto;
+        transition: background 0.2s;
+        border: none;
+        text-transform: uppercase;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
 }
