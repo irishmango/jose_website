@@ -1,10 +1,11 @@
+const menuBtn = document.querySelector('.menu-btn');
+const drawer = document.getElementById('drawer');
+const closeBtn = document.getElementById('closeDrawer');
 
-// Placeholder for menu button interaction
-document.addEventListener('DOMContentLoaded', function () {
-    const menuBtn = document.querySelector('.menu-btn');
-    if (menuBtn) {
-        menuBtn.addEventListener('click', function () {
-            alert('Menu clicked! (Functionality coming soon)');
-        });
-    }
+menuBtn.addEventListener('click', () => {
+    drawer.classList.toggle('open');
+});
+
+closeBtn.addEventListener('click', () => {
+    drawer.classList.remove('open');
 });
