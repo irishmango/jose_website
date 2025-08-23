@@ -265,25 +265,7 @@ section {
     opacity: 0.5;
 } */
 
-.reviews-label {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    text-orientation: mixed;
-    font-size: 4rem;
-    letter-spacing: 0.18em;
-    color: #fff;
-    font-weight: 400;
-    margin-right: 48px;
-    line-height: 1;
-    text-align: center;
-    min-width: 60px;
-    user-select: none;
-    position: sticky;
-    left: 0;
-    top: 0;
-    align-self: flex-start;
-    z-index: 2;
-}
+
 
 /* Calender Section Layout */
 .calender-container {
@@ -381,25 +363,6 @@ section {
     /* border-top: 4px solid #3a3a3a; */
 }
 
-.calender-label {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    text-orientation: mixed;
-    font-size: 4rem;
-    letter-spacing: 0.18em;
-    color: #eaeaea;
-    font-weight: 400;
-    margin-right: 48px;
-    line-height: 1;
-    text-align: center;
-    min-width: 60px;
-    user-select: none;
-    position: sticky;
-    left: 0;
-    top: 0;
-    align-self: flex-start;
-    z-index: 2;
-}
 
 
 
@@ -445,25 +408,6 @@ section {
 
 }
 
-.projects-label {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    text-orientation: mixed;
-    font-size: 4rem;
-    letter-spacing: 0.18em;
-    color: #eaeaea;
-    font-weight: 400;
-    margin-right: 48px;
-    line-height: 1;
-    text-align: center;
-    min-width: 60px;
-    user-select: none;
-    position: sticky;
-    left: 0;
-    top: 0;
-    align-self: flex-start;
-    z-index: 2;
-}
 
 .projects-gallery {
     display: flex;
@@ -566,25 +510,6 @@ section {
     align-items: start;
 }
 
-.bio-label {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    text-orientation: mixed;
-    font-size: 4rem;
-    letter-spacing: 0.18em;
-    color: #eaeaea;
-    font-weight: 400;
-    margin-right: 48px;
-    line-height: 1;
-    text-align: center;
-    min-width: 60px;
-    user-select: none;
-    position: sticky;
-    left: 0;
-    top: 0;
-    align-self: flex-start;
-    z-index: 2;
-}
 
 
 
@@ -665,13 +590,14 @@ section {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 2rem;
     letter-spacing: 0.12em;
-    font-weight: 400;
+    font-weight: 500;
     color: #111;
 }
 
 .main-title .subtitle {
     font-size: 1rem;
     color: #444;
+    font-weight: 600;
     letter-spacing: 0.08em;
 }
 
