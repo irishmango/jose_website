@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lovelease — José Cortés</title>
-    <link rel="stylesheet" href="project_page_styles.css">
+    <link rel="stylesheet" href="../projects/project_page_styles.css">
     <script src="../script.js" defer></script>
 </head>
 
@@ -27,7 +27,7 @@
 
             <div class="project-content">
                 <h1 class="project-title">Lovelease</h1>
-                <p class="project-subtitle">Deutsche Oper Berlin "Tischleri</p>
+                <p class="project-subtitle">Deutsche Oper Berlin "Tischleri"</p>
 
                 <div class="project-main-image">
                     <img src="../assets/lovelease_4.jpg" alt="Lovelease Main">
@@ -119,7 +119,16 @@
                     </div>
                 </div>
             </div>
+            <div id="viewport-size"></div>
         </div>
+        <script>
+            const sizeDisplay = document.getElementById('viewport-size');
+            function updateSize() {
+                sizeDisplay.textContent = `${window.innerWidth}px × ${window.innerHeight}px`;
+            }
+            window.addEventListener('resize', updateSize);
+            updateSize();
+        </script>
     </section>
 </body>
 

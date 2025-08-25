@@ -12,6 +12,7 @@ body {
     font-family: 'Synonym';
 }
 
+
 .project-page {
     width: 100vw;
     min-height: 100vh;
@@ -23,6 +24,8 @@ body {
 }
 
 .project-label {
+    font-family: 'Synonym';
+    font-weight: 200;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     color: white;
@@ -46,16 +49,17 @@ body {
 .project-content {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 24px;
     flex: 1;
     color: white;
 }
 
 .project-title {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 0px;
+    font-size: 4rem;
+    font-weight: 300;
+    margin: 0;
 }
+
 
 .project-subtitle {
     font-size: 1.5rem;
@@ -71,7 +75,6 @@ body {
     border-radius: 4px;
 }
 
-
 .project-gallery {
     display: flex;
     flex-direction: column;
@@ -85,7 +88,7 @@ body {
 
 .gallery-row img {
     flex: 1;
-    max-width: 100%;
+    width: 200px;
     height: auto;
     border-radius: 4px;
     object-fit: cover;
@@ -124,83 +127,6 @@ body {
     font-weight: 300;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.project-page {
-    width: 100vw;
-    min-height: 100vh;
-    background: #1e1e1e;
-    display: flex;
-    justify-content: center;
-    padding: 48px 0;
-    box-sizing: border-box;
-}
-
-.project-label {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    color: white;
-    font-size: 4rem;
-    margin-right: 48px;
-    min-width: 60px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    align-self: flex-start;
-}
-
-.project-container {
-    display: flex;
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 32px;
-    align-items: flex-start;
-}
-
-.project-content {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    flex: 1;
-    color: white;
-}
-
-.project-title {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 0px;
-}
-
-.project-subtitle {
-    font-size: 1.5rem;
-    color: #bdbdbd;
-    margin-bottom: 12px;
-}
-
-.project-main-image img,
-.project-gallery img,
-.more-gallery img {
-    display: block;
-    max-width: 100%;
-    border-radius: 4px;
-}
-
-.gallery-row img {
-    flex: 1;
-    width: 200px;
-    height: auto;
-    border-radius: 4px;
-    object-fit: cover;
-}
-
-.project-gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
 
 
 
@@ -264,9 +190,11 @@ body {
 
 
 .more-productions p {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 300;
     margin: 8px 0 4px;
     color: #eaeaea;
+    padding-bottom: 8px;
 }
 
 .more-gallery {
@@ -308,7 +236,7 @@ body {
 }
 
 .menu-btn {
-    position: absolute;
+    position: fixed;
     top: 32px;
     right: 32px;
     color: #fff;
@@ -325,10 +253,17 @@ body {
     border: none;
     text-transform: uppercase;
     font-family: 'Synonym';
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .menu-btn:hover {
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, 0.089);
+}
+
+.menu-btn.open {
+    display: none;
 }
 
 .close-btn {
@@ -343,7 +278,7 @@ body {
     font-weight: 400;
     letter-spacing: 0.12em;
     cursor: pointer;
-    z-index: 100;
+    z-index: 1001;
     pointer-events: auto;
     transition: background 0.2s;
     border: none;
@@ -361,11 +296,11 @@ body {
     right: -100%;
     width: 20vw;
     height: 100vh;
-    background: rgba(17, 17, 17, 0.345);
+    background: rgba(17, 17, 17, 0.5);
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    transition: left 0.3s ease-in-out;
+    transition: right 0.2s ease-in-out;
     z-index: 999;
 }
 
@@ -394,4 +329,33 @@ body {
 
 .drawer-nav a:hover {
     color: #bdbdbd;
+}
+
+/* DEBUG */
+/* * {
+    outline: 1px solid magenta !important;
+}
+
+.section-container,
+.projects-container,
+.reviews-container,
+.calender-container,
+.contact-container {
+    border: 2px dashed lime !important;
+}
+
+.menu-btn .bar {
+    display: none;
+} */
+
+#viewport-size {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    z-index: 10000;
 }
