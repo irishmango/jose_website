@@ -47,7 +47,7 @@ body {
 .project-content {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 8px;
     flex: 1;
     color: white;
 }

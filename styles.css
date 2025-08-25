@@ -130,6 +130,12 @@ section {
     margin-bottom: 16px;
 }
 
+.contact-details a {
+    color: #eaeaea;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
 .contact-rep {
     font-size: 0.98rem;
     color: #eaeaea;
@@ -137,9 +143,9 @@ section {
 }
 
 .contact-rep-label {
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    color: #fff;
+    font-size: 0.98rem;
+    color: #eaeaea;
+    margin-bottom: 16px;
 }
 
 .contact-image-placeholder {
@@ -571,7 +577,7 @@ section {
     width: 100vw;
     height: 100vh;
     object-fit: fill;
-    display: block;
+    /* display: block; */
     filter: grayscale(1) contrast(1.1);
     position: absolute;
     top: 0;
