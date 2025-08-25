@@ -1,8 +1,7 @@
 @font-face {
-    font-family: 'Century Gothic';
-    src: url('fonts/CenturyGothic.woff2') format('woff2'),
-        url('fonts/CenturyGothic.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Synonym';
+    src: url('../fonts/synonym/Synonym-Variable.woff2') format('woff2');
+    font-weight: 200 700;
     font-style: normal;
     font-display: swap;
 }
@@ -10,7 +9,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Century Gothic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Synonym';
 }
 
 .project-page {
@@ -325,7 +324,7 @@ body {
     transition: background 0.2s;
     border: none;
     text-transform: uppercase;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Synonym';
 }
 
 .menu-btn:hover {
@@ -349,7 +348,7 @@ body {
     transition: background 0.2s;
     border: none;
     text-transform: uppercase;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Synonym';
 }
 
 .close-btn:hover {

@@ -9,13 +9,14 @@
 
 
 .section-label {
+    font-family: 'Synonym';
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     text-orientation: mixed;
     font-size: 4rem;
     letter-spacing: 0.18em;
     color: #fff;
-    font-weight: 400;
+    font-weight: 200;
     margin-right: 48px;
     line-height: 1;
     text-align: center;
@@ -29,10 +30,10 @@
 }
 
 @font-face {
-    font-family: 'Century Gothic';
-    src: url('fonts/CenturyGothic.woff2') format('woff2'),
-        url('fonts/CenturyGothic.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Synonym';
+    src: url('/fonts/synonym/Synonym-Variable.woff2') format('woff2');
+    font-weight: 200 700;
+    /* full range provided by the file */
     font-style: normal;
     font-display: swap;
 }
@@ -41,7 +42,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Century Gothic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Synonym';
 }
 
 section {
@@ -251,13 +252,14 @@ section {
 
 .review-title {
     font-size: 1.15rem;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.08em;
     margin-bottom: 16px;
     color: #fff;
 }
 
 .review-text {
+    font-family: 'Synonym';
     font-size: 0.98rem;
     line-height: 1.7;
     margin-bottom: 24px;
@@ -265,6 +267,7 @@ section {
 }
 
 .review-source {
+    font-family: 'Synonym';
     font-size: 0.85rem;
     color: #bdbdbd;
     letter-spacing: 0.12em;
@@ -311,6 +314,7 @@ section {
 }
 
 .calender-event {
+    font-family: 'Synonym';
     display: flex;
     flex-direction: row;
     gap: 32px;
@@ -318,6 +322,7 @@ section {
 }
 
 .event-date {
+    font-family: 'Synonym';
     color: #eaeaea;
     font-size: 0.95rem;
     letter-spacing: 0.12em;
@@ -326,15 +331,17 @@ section {
 }
 
 .event-details {
+    font-family: 'Synonym';
     display: flex;
     flex-direction: column;
     gap: 2px;
 }
 
 .event-title {
+    font-family: 'Synonym';
     color: #fff;
     font-size: 1.05rem;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.12em;
     margin-bottom: 2px;
 }
@@ -464,6 +471,8 @@ section {
 }
 
 .project-title {
+    font-family: 'Synonym';
+    font-weight: 200;
     position: absolute;
     bottom: 16px;
     right: 24px;
@@ -608,17 +617,18 @@ section {
 }
 
 .main-title .name {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 2rem;
+    font-family: 'Synonym';
+    font-size: 4rem;
     letter-spacing: 0.12em;
-    font-weight: 500;
+    font-weight: 400;
     color: #111;
 }
 
 .main-title .subtitle {
-    font-size: 1rem;
+    font-family: 'Synonym';
+    font-size: 2rem;
     color: #444;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 0.08em;
 }
 
@@ -639,7 +649,7 @@ section {
     transition: background 0.2s;
     border: none;
     text-transform: uppercase;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Synonym';
     display: flex;
     align-items: center;
     gap: 8px;
@@ -670,7 +680,7 @@ section {
     transition: background 0.2s;
     border: none;
     text-transform: uppercase;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Synonym';
 }
 
 .close-btn:hover {
