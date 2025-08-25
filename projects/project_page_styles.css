@@ -65,6 +65,7 @@ body {
     font-size: 1.5rem;
     color: #bdbdbd;
     margin-bottom: 12px;
+    margin-top: 0;
 }
 
 .project-main-image img,
