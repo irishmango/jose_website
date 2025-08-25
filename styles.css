@@ -649,6 +649,10 @@ section {
     background: rgba(0, 0, 0, 0.089);
 }
 
+.menu-btn.open {
+    display: none;
+}
+
 .close-btn {
     position: absolute;
     top: 32px;
@@ -679,11 +683,11 @@ section {
     right: -100%;
     width: 20vw;
     height: 100vh;
-    background: #111;
+    background: rgba(17, 17, 17, 0.345);
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    transition: right 0.35s ease-in-out;
+    transition: right 0.2s ease-in-out;
     z-index: 999;
 }
 

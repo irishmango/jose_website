@@ -362,7 +362,7 @@ body {
     right: -100%;
     width: 20vw;
     height: 100vh;
-    background: #111;
+    background: rgba(17, 17, 17, 0.345);
     display: flex;
     justify-content: flex-start;
     align-items: center;
