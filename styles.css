@@ -693,7 +693,7 @@ section {
     right: -100%;
     width: 20vw;
     height: 100vh;
-    background: rgba(17, 17, 17, 0.345);
+    background: rgba(17, 17, 17, 0.5);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -738,7 +738,7 @@ section {
 
 
 /* DEBUG */
-* {
+/* * {
     outline: 1px solid magenta !important;
 }
 
@@ -764,4 +764,4 @@ section {
     border-radius: 4px;
     font-size: 0.85rem;
     z-index: 10000;
-}
+} */
