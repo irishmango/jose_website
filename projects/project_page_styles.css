@@ -332,6 +332,40 @@ body {
     color: #bdbdbd;
 }
 
+.footer {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 48px 16px 48px;
+    box-sizing: border-box;
+    font-size: 0.85rem;
+    color: #bdbdbd;
+    background: #232323;
+    /* margin-top: 32px; */
+}
+
+.footer-links {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-link {
+    color: #bdbdbd;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    color: #fff;
+}
+
+.footer-copyright {
+    text-align: center;
+    flex: 1;
+}
+
 /* DEBUG */
 /* * {
     outline: 1px solid magenta !important;

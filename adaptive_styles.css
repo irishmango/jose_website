@@ -19,6 +19,8 @@
         /* center horizontally, reduce vertical spacing */
     }
 
+
+
     /* Vertical section label */
     .section-label {
         font-size: 2.4rem;
@@ -28,6 +30,11 @@
         margin-right: 24px;
         /* tighter gap to content */
     }
+
+
+
+
+
 
     /* Hero title */
     .main-title {
@@ -60,6 +67,13 @@
         height: auto;
     }
 
+
+
+
+
+
+
+
     /* Projects — keep as-is (optional: reduce hover growth on small screens) */
     .projects-gallery img {
         height: 110px;
@@ -69,6 +83,13 @@
     .projects-gallery img:hover {
         height: 170px;
     }
+
+
+
+
+
+
+
 
     /* Calendar layout → column */
     .calender-content {
@@ -91,21 +112,42 @@
         /* remove left margin from desktop */
     }
 
+
+
+
+
+
+
     /* Contact layout → column */
     .contact-content {
+        display: flex;
         flex-direction: column;
+        /* stack on mobile */
         gap: 24px;
     }
 
+    /* Ensure text first, image below */
     .contact-info {
+        order: 1;
         margin-top: 0;
     }
 
-    .contact-image-placeholder {
+    .contact-image-placeholder,
+    .contact-image {
+        order: 2;
         width: 100%;
-        height: 200px;
+        height: auto;
         margin: 16px 0 0 0;
-        /* remove left margin */
+        /* remove desktop left margin */
+    }
+
+    /* If you later swap the placeholder for a real image, keep it contained */
+    .contact-image-placeholder img,
+    .contact-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2px;
     }
 
     /* Type scale trim for body copy */
