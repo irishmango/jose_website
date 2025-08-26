@@ -299,4 +299,13 @@
         height: 100dvh;
         touch-action: none;
     }
+
+    .footer {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .footer-copyright {
+        text-align: right;
+    }
 }
