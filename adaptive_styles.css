@@ -207,6 +207,10 @@
         z-index: 1002;
     }
 
+    .menu-btn.open {
+        display: flex;
+    }
+
     .menu-btn.open .bar:nth-child(2) {
         /* top bar */
         transform: translateY(9px) rotate(45deg);
