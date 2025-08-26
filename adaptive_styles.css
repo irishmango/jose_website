@@ -234,20 +234,25 @@
         position: fixed;
         left: 0;
         right: 0;
-        top: -120%;
+        top: 0;
         width: 100vw;
-        height: 100vh;
+        height: 100dvh;
+        /* use dynamic viewport height on mobile */
         background: #111;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transition: top 0.35s ease-in-out;
+        transform: translateY(calc(-100% - env(safe-area-inset-top)));
+        /* fully offscreen */
+        transition: transform 0.35s ease-in-out;
         z-index: 1000;
+        outline: none !important;
+        /* avoid debug outline peeking */
     }
 
     .drawer.open {
-        top: 0;
+        transform: translateY(0);
     }
 
     .drawer-nav {
@@ -287,5 +292,11 @@
         border: none;
         text-transform: uppercase;
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    body.no-scroll {
+        overflow: hidden;
+        height: 100dvh;
+        touch-action: none;
     }
 }

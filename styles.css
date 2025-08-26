@@ -742,6 +742,10 @@ section {
     outline: 1px solid magenta !important;
 }
 
+.drawer {
+    outline: none !important;
+}
+
 .section-container,
 .projects-container,
 .reviews-container,
