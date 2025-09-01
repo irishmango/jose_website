@@ -32,9 +32,11 @@
     }
 
 
+    .page-wrapper {
 
-
-
+        max-width: none;
+        width: 100%;
+    }
 
     /* Hero title */
     .main-title {
