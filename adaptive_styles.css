@@ -15,7 +15,7 @@
     .calender-container,
     .contact-container,
     .bio-container {
-        margin: 45px;
+        margin: 32px;
         /* center horizontally, reduce vertical spacing */
     }
 
