@@ -68,7 +68,7 @@
         line-height: 2.4rem;
         min-width: 44px;
         margin-right: 16px;
-        position: sticky;
+        position: relative;
         top: 0;
     }
 
