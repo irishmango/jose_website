@@ -1,0 +1,522 @@
+/* =====================================
+   Adaptive styles for Project Pages
+   - Mirrors patterns from adaptive_styles.css
+   - Mobile-first tweaks; tablet touch fixes
+   ===================================== */
+
+/* Header row holds vertical label and heading side-by-side */
+.project-header-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 24px;
+}
+
+.project-heading h1,
+.project-heading p {
+    margin: 0;
+}
+
+.project-heading p {
+    margin-top: 6px;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Tablet / Touch: neutralize hover-only UI */
+@media (max-width: 1024px),
+(hover: none),
+(pointer: coarse) {
+
+    /* Prevent hover growth/reveal on touch */
+    .more-gallery img {
+        transition: none;
+    }
+
+    .more-gallery img:hover {
+        width: 250px;
+    }
+
+    .more-production-image:hover .more-productions-title {
+        opacity: 0;
+    }
+}
+
+/* Mobile (≤ 767px) */
+@media (max-width: 767px) {
+
+    /* Page spacing */
+    .project-page {
+        padding: 24px 0;
+        /* tighter rhythm */
+    }
+
+    .project-container {
+        margin: 0 16px;
+        /* slimmer gutters */
+        flex-direction: column;
+        /* stack rail over content */
+        align-items: stretch;
+    }
+
+    .project-header-row {
+        gap: 12px;
+    }
+
+    /* Vertical rail label */
+    .project-label {
+        font-size: 2.4rem;
+        /* was 4rem */
+        min-width: 44px;
+        margin-right: 16px;
+        position: sticky;
+        top: 0;
+    }
+
+    /* Type scale */
+    .project-title {
+        font-size: clamp(1.8rem, 8vw, 2.6rem);
+    }
+
+    .project-subtitle {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+    /* Media blocks */
+    .project-main-image img,
+    .project-gallery img,
+    .more-gallery img {
+        border-radius: 2px;
+    }
+
+    /* Gallery: single-column stacks */
+    .project-gallery {
+        gap: 8px;
+    }
+
+    .gallery-row {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .gallery-row img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* More productions: horizontal scroll with readable overlay */
+    .more-gallery {
+        gap: 8px;
+        overflow-x: auto;
+    }
+
+    .more-production-image {
+        display: inline-block;
+        width: 85vw;
+        max-width: 520px;
+    }
+
+    .more-gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Title overlay always visible on mobile */
+    .more-productions-title {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 12px 16px;
+        font-size: clamp(1.1rem, 6vw, 1.6rem);
+        opacity: 1;
+        /* always on */
+        background: linear-gradient(to top,
+                rgba(0, 0, 0, .55),
+                rgba(0, 0, 0, .25) 40%,
+                rgba(0, 0, 0, 0) 70%);
+    }
+
+    /* Creative team: stack columns */
+    .creative-team {
+        flex-direction: column;
+        gap: 24px;
+        padding-bottom: 32px;
+    }
+
+    .team-column {
+        flex: 1 1 auto;
+    }
+
+    .creative-team p {
+        font-size: 0.95rem;
+    }
+
+    /* Menu button nudge */
+    /* =====================================
+   Adaptive styles for Project Pages
+   - Mirrors patterns from adaptive_styles.css
+   - Mobile-first tweaks; tablet touch fixes
+   ===================================== */
+
+    /* Respect reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+        * {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
+    }
+
+    /* Tablet / Touch: neutralize hover-only UI */
+    @media (max-width: 1024px),
+    (hover: none),
+    (pointer: coarse) {
+
+        /* Prevent hover growth/reveal on touch */
+        .more-gallery img {
+            transition: none;
+        }
+
+        .more-gallery img:hover {
+            width: 250px;
+        }
+
+        .more-production-image:hover .more-productions-title {
+            opacity: 0;
+        }
+    }
+
+    /* Mobile (≤ 767px) */
+    @media (max-width: 767px) {
+
+        /* Page spacing */
+        .project-page {
+            padding: 24px 0;
+            /* tighter rhythm */
+        }
+
+        .project-container {
+
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .project-content {
+            padding: 12px 24px;
+        }
+
+        /* Vertical rail label */
+        .project-label {
+            font-size: 2.4rem;
+            /* was 4rem */
+            min-width: 44px;
+            margin-right: 16px;
+            position: relative;
+            top: 0;
+        }
+
+        /* Type scale */
+        .project-title {
+            font-size: clamp(1.8rem, 8vw, 2.6rem);
+        }
+
+        .project-subtitle {
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        /* Media blocks */
+        .project-main-image img,
+        .project-gallery img,
+        .more-gallery img {
+            border-radius: 2px;
+        }
+
+        /* Gallery: single-column stacks */
+        .project-gallery {
+            gap: 8px;
+        }
+
+        .gallery-row {
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .gallery-row img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* More productions: horizontal scroll with readable overlay */
+        .more-gallery {
+            gap: 8px;
+            overflow-x: auto;
+        }
+
+        .more-production-image {
+            display: inline-block;
+            width: 85vw;
+            max-width: 520px;
+        }
+
+        .more-gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Title overlay always visible on mobile */
+        .more-productions-title {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            padding: 12px 16px;
+            font-size: clamp(1.1rem, 6vw, 1.6rem);
+            opacity: 1;
+            /* always on */
+            background: linear-gradient(to top,
+                    rgba(0, 0, 0, .55),
+                    rgba(0, 0, 0, .25) 40%,
+                    rgba(0, 0, 0, 0) 70%);
+        }
+
+        /* Creative team: stack columns */
+        .creative-team {
+            flex-direction: column;
+            gap: 24px;
+            padding-bottom: 32px;
+        }
+
+        .team-column {
+            flex: 1 1 auto;
+        }
+
+        .creative-team p {
+            font-size: 0.95rem;
+        }
+
+        /* Menu button (hamburger → X) */
+        .menu-btn {
+            top: 16px;
+            right: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 32px;
+            height: 22px;
+            padding: 0;
+            gap: 0;
+            z-index: 1002;
+        }
+
+        .menu-btn .menu-label {
+            display: none;
+        }
+
+        .menu-btn .bar {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background: #fff;
+            border-radius: 2px;
+            transition: transform 0.25s ease, opacity 0.25s ease;
+            transform-origin: center;
+            z-index: 1002;
+        }
+
+        .menu-btn.open {
+            display: flex;
+        }
+
+        .menu-btn.open .bar:nth-child(2) {
+            /* top bar */
+            transform: translateY(9px) rotate(45deg);
+        }
+
+        .menu-btn.open .bar:nth-child(3) {
+            /* middle bar */
+            opacity: 0;
+        }
+
+        .menu-btn.open .bar:nth-child(4) {
+            /* bottom bar */
+            transform: translateY(-10px) rotate(-45deg);
+        }
+
+        .drawer {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            width: 100vw;
+            height: 100dvh;
+            /* use dynamic viewport height on mobile */
+            background: #111;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(calc(-100% - env(safe-area-inset-top)));
+            /* fully offscreen */
+            transition: transform 0.35s ease-in-out;
+            z-index: 1000;
+            outline: none !important;
+            /* avoid debug outline peeking */
+        }
+
+        .drawer.open {
+            transform: translateY(0);
+        }
+
+        .drawer-nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+            font-size: 1rem;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .drawer-nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            color: #fff;
+            background: none;
+            padding: 8px 24px;
+            border-radius: 2px;
+            font-size: 1.2rem;
+            font-weight: 400;
+            letter-spacing: 0.12em;
+            cursor: pointer;
+            z-index: 1001;
+            pointer-events: auto;
+            transition: background 0.2s;
+            border: none;
+            text-transform: uppercase;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        body.no-scroll {
+            overflow: hidden;
+            height: 100dvh;
+            touch-action: none;
+        }
+
+        .footer {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .footer-copyright {
+            text-align: right;
+        }
+    }
+
+    .close-btn {
+        display: none;
+    }
+
+    .drawer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100vw;
+        height: 100dvh;
+        /* use dynamic viewport height on mobile */
+        background: #111;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(calc(-100% - env(safe-area-inset-top)));
+        /* fully offscreen */
+        transition: transform 0.35s ease-in-out;
+        z-index: 1000;
+        outline: none !important;
+        /* avoid debug outline peeking */
+    }
+
+    .drawer.open {
+        transform: translateY(0);
+    }
+
+    .drawer-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        font-size: 1rem;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .drawer-nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        color: #fff;
+        background: none;
+        padding: 8px 24px;
+        border-radius: 2px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: 0.12em;
+        cursor: pointer;
+        z-index: 1001;
+        pointer-events: auto;
+        transition: background 0.2s;
+        border: none;
+        text-transform: uppercase;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    body.no-scroll {
+        overflow: hidden;
+        height: 100dvh;
+        touch-action: none;
+    }
+
+    .footer {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .footer-copyright {
+        text-align: right;
+    }
+}

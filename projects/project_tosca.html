@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tosca — José Cortés</title>
     <link rel="stylesheet" href="project_page_styles.css">
+    <link rel="stylesheet" href="project_page_adaptive_style.css">
     <script src="../script.js" defer></script>
 </head>
 
 <body>
     <section class="project-page">
-        <button class="menu-btn">MENU</button>
+        <button class="menu-btn" aria-label="Menu">
+            <span class="menu-label">MENU</span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
         <div class="drawer" id="drawer">
             <button class="close-btn" id="closeDrawer">CLOSE</button>
             <nav class="drawer-nav">
@@ -23,11 +29,15 @@
             </nav>
         </div>
         <div class="project-container">
-            <div class="project-label">PROJECTS</div>
+            <div class="project-header-row">
+                <div class="project-label">PROJECTS</div>
+                <div class="project-heading">
+                    <h1 class="project-title">Tosca</h1>
+                    <p class="project-subtitle">HESSISCHES STAATSTHEATER WIESBADEN</p>
+                </div>
+            </div>
 
             <div class="project-content">
-                <h1 class="project-title">Tosca</h1>
-                <p class="project-subtitle">HESSISCHES STAATSTHEATER WIESBADEN</p>
 
                 <div class="project-main-image">
                     <img src="../assets/tosca_main.jpg" alt="Tosca Main">
