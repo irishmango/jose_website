@@ -296,3 +296,32 @@
         text-align: right;
     }
 }
+
+/* Phone landscape: treat like mobile */
+@media (orientation: landscape) and (max-height: 500px),
+(orientation: landscape) and (max-width: 915px) {
+
+    /* kill side gutters */
+    .section-container,
+    .projects-container,
+    .reviews-container,
+    .calender-container,
+    .contact-container,
+    .bio-container,
+    .project-container {
+        margin: 0 12px;
+        /* or 0 for full-bleed */
+        box-sizing: border-box;
+        max-width: none;
+        width: 100%;
+    }
+
+    /* make hero/media truly edge-to-edge */
+    .project-main-image img,
+    .project-gallery img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+}
