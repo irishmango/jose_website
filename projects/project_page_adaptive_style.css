@@ -128,11 +128,17 @@
     }
 
     .more-gallery img {
-        width: 100%;
-        height: auto;
+        width: 100% !important;
+        height: auto !important;
         display: block;
         object-fit: cover;
         border-radius: 2px;
+        transition: none !important;
+    }
+
+    .more-gallery img:hover {
+        width: 100% !important;
+        height: auto !important;
     }
 
     /* Title overlay always visible on mobile */
