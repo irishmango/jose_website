@@ -149,16 +149,20 @@ section {
     margin-bottom: 16px;
 }
 
-.contact-image-placeholder {
-    width: 20px;
-    height: 220px;
-    background: #888;
-    opacity: 0.45;
-    border-radius: 2px;
-    flex: 1;
+.contact-image {
+    max-width: 520px;
+    width: 100%;
+    border-radius: 4px;
     align-self: flex-start;
     margin-left: 32px;
     margin-top: 16px;
+}
+
+.contact-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
 
 
