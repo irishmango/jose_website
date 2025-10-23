@@ -507,13 +507,10 @@ section {
     object-position: 20% 55%;
 }
 
-/* Specific crop tweak for Answering Machine tile */
 #answering_machine {
     object-fit: cover;
-    /* Fallback approximation */
     object-position: 50% 60%;
-    /* Precise ~40px downward shift from center when supported */
-    object-position: 50% calc(50% + 40px);
+    object-position: 50% calc(80% + 40px);
 }
 
 
