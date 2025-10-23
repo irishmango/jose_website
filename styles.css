@@ -734,6 +734,22 @@ section {
     color: #bdbdbd;
 }
 
+/* Language toggle button styled like a link */
+.drawer-nav .lang-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    padding: 0;
+}
+
+.drawer-nav .lang-toggle:hover {
+    color: #bdbdbd;
+}
+
 
 
 
