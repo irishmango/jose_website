@@ -77,7 +77,7 @@ if (closeBtn) {
     const translations = {
         en: {
             menuLabel: 'MENU',
-            close: 'CLOSE',
+            close: 'X',
             nav: {
                 HOME: 'HOME',
                 BIOGRAPHY: 'BIOGRAPHY',
@@ -123,7 +123,7 @@ if (closeBtn) {
         },
         de: {
             menuLabel: 'MENÜ',
-            close: 'SCHLIESSEN',
+            close: 'X',
             nav: {
                 HOME: 'STARTSEITE',
                 BIOGRAPHY: 'BIOGRAFIE',
