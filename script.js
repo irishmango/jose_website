@@ -135,7 +135,7 @@ if (closeBtn) {
             sections: {
                 BIOGRAPHY: 'BIOGRAFIE',
                 PROJECTS: 'PROJEKTE',
-                REVIEWS: 'KRITIKEN',
+                REVIEWS: 'REZENSIONEN',
                 CONTACT: 'KONTAKT'
             },
             projectLabel: 'PROJEKTE',
