@@ -2,8 +2,6 @@
 const menuBtn = document.querySelector('.menu-btn');
 const drawer = document.getElementById('drawer');
 const closeBtn = document.getElementById('closeDrawer');
-const backToTopBtn = document.getElementById('backToTop');
-const footerEl = document.querySelector('.footer');
 
 if (menuBtn && drawer) {
     menuBtn.addEventListener('click', () => {
@@ -13,33 +11,47 @@ if (menuBtn && drawer) {
     });
 }
 
-// Back-to-top: show after scrolling and enable smooth scroll
-if (backToTopBtn) {
-    const toggleBackToTop = () => {
-        const y = window.scrollY || document.documentElement.scrollTop;
-        backToTopBtn.style.display = y > 400 ? 'block' : 'none';
+// Back to Top Button (avoid overlapping footer) — provided function
+(function () {
+    const backToTop = document.getElementById('backToTop');
+    if (!backToTop) return;
+    const footer = document.querySelector('.site-footer, .footer');
+    const BASE_BOTTOM = 20; // px
+    const BASE_RIGHT = 30; // px
 
-        // Lift the button up when the footer enters the viewport so they don't overlap
-        if (footerEl && backToTopBtn.style.display !== 'none') {
-            const rect = footerEl.getBoundingClientRect();
-            const btnH = backToTopBtn.getBoundingClientRect().height || 48;
-            const base = 20; // must match CSS base bottom offset
-            const gap = 12; // distance we want above the footer
-            const distanceToFooterTop = Math.max(0, window.innerHeight - rect.top);
-            const overlap = base + btnH + gap - (window.innerHeight - rect.top);
-            const lift = Math.max(0, overlap);
-            backToTopBtn.style.bottom = `calc(${base + lift}px + env(safe-area-inset-bottom, 0px))`;
+    function updateBackToTop() {
+        // Toggle visibility
+        if (window.scrollY > window.innerHeight * 0.8) {
+            backToTop.style.display = 'block';
+        } else {
+            backToTop.style.display = 'none';
         }
-    };
 
-    window.addEventListener('scroll', toggleBackToTop, { passive: true });
-    window.addEventListener('resize', toggleBackToTop);
-    toggleBackToTop(); // initialize on load
+        // Default fixed placement
+        backToTop.style.position = 'fixed';
+        backToTop.style.right = BASE_RIGHT + 'px';
 
-    backToTopBtn.addEventListener('click', () => {
+        // If footer is visible, push the button up so it never overlaps
+        let bottom = BASE_BOTTOM;
+        if (footer) {
+            const rect = footer.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                const overlap = Math.max(0, window.innerHeight - rect.top);
+                bottom = BASE_BOTTOM + overlap;
+            }
+        }
+        backToTop.style.bottom = bottom + 'px';
+    }
+
+    window.addEventListener('scroll', updateBackToTop);
+    window.addEventListener('resize', updateBackToTop);
+    // Initial position
+    updateBackToTop();
+
+    backToTop.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-}
+})();
 
 if (closeBtn) {
     closeBtn.addEventListener('click', () => {
