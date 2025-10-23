@@ -787,3 +787,26 @@ section {
     object-fit: cover;
     object-position: 20% 40%;
 }
+
+#backToTop {
+    position: fixed;
+    /* account for iOS home indicator with safe-area inset */
+    bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+    right: 30px;
+    z-index: 1005;
+    display: none;
+    color: rgba(255, 255, 255, 1);
+    font-size: 32px;
+    padding: 10px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+
+#backToTop:hover {
+    color: rgba(255, 255, 255, 1);
+    transform: scale(1.1);
+}
