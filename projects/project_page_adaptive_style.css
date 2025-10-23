@@ -1,17 +1,10 @@
-.project-header-row {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    gap: 24px;
-}
-
 .project-heading h1,
 .project-heading p {
     margin: 0;
 }
 
 .project-heading p {
-    margin-top: 6px;
+    margin-top: 0px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -49,25 +42,25 @@
     }
 
     .project-container {
+        /* Keep a two-column grid on mobile so the label travels alongside content */
+        display: grid;
+        grid-template-columns: minmax(36px, 44px) 1fr;
+        column-gap: 16px;
+        row-gap: 12px;
         margin: 0 16px;
-        gap: 12px;
-        flex-direction: column;
-        align-items: stretch;
+        align-items: start;
     }
 
     .project-content {
         gap: 8px;
     }
 
-    .project-header-row {
-        gap: 0px;
-    }
-
     .project-label {
         font-size: 2.4rem;
         line-height: 2.4rem;
         min-width: 44px;
-        margin-right: 16px;
+        /* spacing controlled by grid column gap on mobile */
+        margin-right: 0;
         position: sticky;
         top: 0;
     }

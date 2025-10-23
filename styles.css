@@ -507,11 +507,7 @@ section {
     object-position: 20% 55%;
 }
 
-#answering_machine {
-    object-fit: cover;
-    object-position: 50% 60%;
-    object-position: 50% calc(80% + 40px);
-}
+/* answering_machine was adjusted later with final overrides */
 
 
 
@@ -775,3 +771,15 @@ section {
     font-size: 0.85rem;
     z-index: 10000;
 } */
+
+/* Project image crop overrides — keep last so they always win */
+.projects-gallery img#answering_machine {
+    object-fit: cover;
+    /* ~40px lower crop without calc() for better Safari/WebKit support */
+    object-position: 10% 22%;
+}
+
+.projects-gallery img#tosca {
+    object-fit: cover;
+    object-position: 20% 40%;
+}
