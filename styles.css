@@ -629,7 +629,7 @@ section {
 .main-title {
     position: absolute;
     left: 52px;
-    bottom: 20px;
+    bottom: 60px;
     color: #111;
     z-index: 4;
     pointer-events: auto;
@@ -639,7 +639,7 @@ section {
     font-family: 'Synonym';
     font-size: 4rem;
     letter-spacing: 0.12em;
-    font-weight: 400;
+    font-weight: 500;
     color: #111;
 }
 
