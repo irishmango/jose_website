@@ -67,6 +67,7 @@
 
     .project-title {
         font-size: clamp(1.8rem, 8vw, 2.6rem);
+        line-height: 1.1; /* tighter leading for wrapped titles on mobile */
     }
 
     .project-subtitle {
