@@ -18,6 +18,7 @@
 
     /* Fallback for older browsers that don't support dvh */
     @supports (height: 100svh) {
+
         .hero .main,
         .main-image,
         .main-content {
