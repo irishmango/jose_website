@@ -382,6 +382,21 @@ body {
     flex: 1;
 }
 
+.drawer-nav .lang-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    padding: 0;
+}
+
+.drawer-nav .lang-toggle:hover {
+    color: #bdbdbd;
+}
+
 /* DEBUG */
 /* * {
     outline: 1px solid magenta !important;
