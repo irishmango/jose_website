@@ -102,6 +102,7 @@ body {
 
 .gallery-row {
     display: flex;
+    flex-direction: row;
     gap: 12px;
 }
 
@@ -113,10 +114,7 @@ body {
     object-fit: cover;
 }
 
-.gallery-row:first-child img,
-.gallery-row:last-child img {
-    width: 100%;
-}
+
 
 .project-placeholder {
     width: 160px;
