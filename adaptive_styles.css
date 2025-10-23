@@ -8,6 +8,23 @@
 /* Mobile (≤ 767px) */
 @media (max-width: 767px) {
 
+    /* Use dynamic viewport units for the hero only so it fits the visible area below browser toolbars */
+    .hero .main,
+    .main-image,
+    .main-content {
+        min-height: 100dvh;
+        height: auto;
+    }
+
+    /* Fallback for older browsers that don't support dvh */
+    @supports (height: 100svh) {
+        .hero .main,
+        .main-image,
+        .main-content {
+            min-height: 100svh;
+        }
+    }
+
     /* Global spacing */
     .section-container,
     .projects-container,
