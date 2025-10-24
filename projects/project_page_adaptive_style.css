@@ -36,6 +36,12 @@
 
 /* Tablet (≤ 1024px): keep 5 columns, tighten spacing */
 @media (max-width: 1024px) {
+
+    /* Give content breathing room from fixed menu button on the right */
+    .project-content {
+        padding-right: 40px;
+    }
+
     .grid {
         grid-template-columns: repeat(5, 1fr);
         gap: clamp(6px, 2vw, 16px);
@@ -72,6 +78,8 @@
 
     .project-content {
         gap: 8px;
+        /* Extra padding so fixed menu button doesn't overlap content */
+        padding-right: 42px;
     }
 
     .project-label {
