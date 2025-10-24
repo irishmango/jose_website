@@ -82,7 +82,6 @@ if (closeBtn) {
                 HOME: 'HOME',
                 BIOGRAPHY: 'BIOGRAPHY',
                 PROJECTS: 'PROJECTS',
-                CALENDER: 'CALENDER',
                 REVIEWS: 'REVIEWS',
                 CONTACT: 'CONTACT'
             },
@@ -128,7 +127,6 @@ if (closeBtn) {
                 HOME: 'STARTSEITE',
                 BIOGRAPHY: 'BIOGRAFIE',
                 PROJECTS: 'PROJEKTE',
-                CALENDER: 'KALENDER',
                 REVIEWS: 'REZENSIONEN',
                 CONTACT: 'KONTAKT'
             },
