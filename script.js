@@ -129,7 +129,7 @@ if (closeBtn) {
                 BIOGRAPHY: 'BIOGRAFIE',
                 PROJECTS: 'PROJEKTE',
                 CALENDER: 'KALENDER',
-                REVIEWS: 'KRITIKEN',
+                REVIEWS: 'REZENSIONEN',
                 CONTACT: 'KONTAKT'
             },
             sections: {

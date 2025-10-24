@@ -62,11 +62,12 @@
 
     .main-title .name {
         font-size: 2rem;
-        font-weight: 400;
+        font-weight: 600;
     }
 
     .main-title .subtitle {
         font-size: 1.5rem;
+        font-weight: 500;
     }
 
     /* Biography layout → column */
