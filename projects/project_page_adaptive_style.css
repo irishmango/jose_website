@@ -34,8 +34,27 @@
     }
 }
 
+/* Tablet (≤ 1024px): keep 5 columns, tighten spacing */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: clamp(6px, 2vw, 16px);
+        padding: 24px 16px;
+    }
+
+    .grid>* {
+        width: 100%;
+    }
+}
+
 /* Mobile (≤ 767px) */
 @media (max-width: 767px) {
+
+    /* Prevent horizontal scroll/gutter on iOS Safari due to 100vw quirks */
+    html,
+    body {
+        overflow-x: hidden;
+    }
 
     .project-page {
         padding: 24px 0;
@@ -93,6 +112,7 @@
     }
 
     .gallery-row img {
+        flex: 1;
         width: 100%;
         height: auto;
         object-fit: cover;
@@ -175,6 +195,20 @@
     .creative-team p {
         font-size: 0.95rem;
     }
+
+    .grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 8px;
+        padding: 16px 12px;
+    }
+
+    .grid>* {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 110 / 76;
+    }
+
+
 
 
 
