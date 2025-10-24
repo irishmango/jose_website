@@ -56,20 +56,18 @@
 
     /* Hero title */
     .main-title {
-        left: 20px;
-        bottom: 300px;
+        left: 24px;
+        bottom: 56px;
     }
 
     .main-title .name {
         font-size: 2rem;
         font-weight: 400;
-        color: #fff;
     }
 
     .main-title .subtitle {
         font-size: 1.5rem;
         font-weight: 400;
-        color: #fff;
     }
 
     /* Biography layout → column */
