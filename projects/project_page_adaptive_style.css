@@ -16,9 +16,8 @@
     }
 }
 
-/* Tablet / Touch: neutralize hover-only UI */
-@media (max-width: 1024px),
-(hover: none),
+/* Touch devices: neutralize hover-only UI */
+@media (hover: none),
 (pointer: coarse) {
 
     .more-gallery img {
@@ -50,6 +49,11 @@
 
     .grid>* {
         width: 100%;
+    }
+
+    /* On small desktop/tablet widths, reduce overlay title size so it fits */
+    .more-productions-title {
+        font-size: clamp(1rem, 1.9vw, 1.6rem);
     }
 }
 
