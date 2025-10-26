@@ -192,6 +192,91 @@ if (closeBtn) {
         );
     }
 
+    // Creative team role label translations for project pages
+    const roleLabels = {
+        en: {
+            'regie': 'Director',
+            'director': 'Director',
+            'bühnenbild': 'Set design',
+            'buhnenbild': 'Set design',
+            'set design': 'Set design',
+            'belichtung': 'Lighting',
+            'licht': 'Lighting',
+            'lighting': 'Lighting',
+            'fotos': 'Photos',
+            'photos': 'Photos',
+            'requisite': 'Props',
+            'requisiten': 'Props',
+            'props': 'Props',
+            'stage props': 'Props',
+            'sopran': 'Soprano',
+            'soprano': 'Soprano',
+            'bass-bariton': 'Bass-baritone',
+            'bass bariton': 'Bass-baritone',
+            'bass-baritone': 'Bass-baritone',
+            'tenor': 'Tenor',
+            'instrumentalstudierende': 'Instrumental students',
+            'instrumental studierende': 'Instrumental students',
+            'instrumental students': 'Instrumental students',
+            'chor': 'Chorus',
+            'chorus': 'Chorus',
+            'kostüm': 'Costumes',
+            'kostum': 'Costumes',
+            'costumes': 'Costumes'
+        },
+        de: {
+            'regie': 'Regie',
+            'director': 'Regie',
+            'bühnenbild': 'Bühnenbild',
+            'buhnenbild': 'Bühnenbild',
+            'set design': 'Bühnenbild',
+            'belichtung': 'Belichtung',
+            'licht': 'Belichtung',
+            'lighting': 'Belichtung',
+            'fotos': 'Fotos',
+            'photos': 'Fotos',
+            'requisite': 'Requisiten',
+            'requisiten': 'Requisiten',
+            'props': 'Requisiten',
+            'stage props': 'Requisiten',
+            'sopran': 'Sopran',
+            'soprano': 'Sopran',
+            'bass-bariton': 'Bass-Bariton',
+            'bass bariton': 'Bass-Bariton',
+            'bass-baritone': 'Bass-Bariton',
+            'tenor': 'Tenor',
+            'instrumentalstudierende': 'Instrumentalstudierende',
+            'instrumental studierende': 'Instrumentalstudierende',
+            'instrumental students': 'Instrumentalstudierende',
+            'chor': 'Chor',
+            'chorus': 'Chor',
+            'kostüm': 'Kostüm',
+            'kostum': 'Kostüm',
+            'costumes': 'Kostüm'
+        }
+    };
+
+    function translateCreativeTeamLabels(lang) {
+        const map = roleLabels[lang];
+        if (!map) return;
+        const strongs = document.querySelectorAll('.creative-team p strong');
+        if (!strongs.length) return;
+        strongs.forEach((el) => {
+            const raw = (el.textContent || '').trim();
+            const base = raw.replace(/:\s*$/, '').trim();
+            const lower = base.toLowerCase();
+            const stripped = lower.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+            const candidates = [lower, stripped];
+            let translated = null;
+            for (const key of candidates) {
+                if (map[key]) { translated = map[key]; break; }
+            }
+            if (translated) {
+                el.textContent = translated + ':';
+            }
+        });
+    }
+
     function applyTranslations(lang) {
         const t = translations[lang] || translations.en;
 
@@ -268,6 +353,9 @@ if (closeBtn) {
         if (reviewText && t.long && t.long.review1) {
             reviewText.innerHTML = t.long.review1;
         }
+
+        // Creative team role labels on project pages
+        translateCreativeTeamLabels(lang);
     }
 
     function init() {
