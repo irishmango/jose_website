@@ -221,20 +221,20 @@ body {
 .more-gallery {
     display: flex;
     gap: 8px;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    /* Avoid horizontal overflow while animating widths */
+    overflow: hidden;
+    width: 100%;
 }
 
 .more-gallery img {
-    width: 250px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 2px;
     background: #ccc;
-    transition: all 0.4s ease;
-}
-
-.more-gallery img:hover {
-    width: 300px;
-    height: 150px;
+    transition: opacity 0.35s ease;
 }
 
 
@@ -278,9 +278,24 @@ body {
 
 .more-production-image {
     position: relative;
-    display: inline-block;
+    display: block;
+    /* Base size, allow shrink, no grow beyond basis unless hovered */
+    flex: 0 1 250px;
+    min-width: 140px;
+    height: 150px;
     /* Ensure overlays do not spill outside the image container */
     overflow: hidden;
+    transition: flex-basis 0.35s ease;
+}
+
+/* When gallery is hovered, gently shrink all tiles to make room */
+.more-gallery:hover .more-production-image {
+    flex-basis: 180px;
+}
+
+/* Enlarge only the hovered tile so others make room */
+.more-gallery .more-production-image:hover {
+    flex-basis: 360px;
 }
 
 .more-productions-title {

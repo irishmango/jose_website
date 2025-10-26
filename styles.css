@@ -511,6 +511,11 @@ section {
     object-position: 20% 55%;
 }
 
+#bayreuth {
+    object-fit: cover;
+    object-position: 60% 48%;
+}
+
 /* answering_machine was adjusted later with final overrides */
 
 
