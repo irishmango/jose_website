@@ -279,19 +279,27 @@ body {
 .more-production-image {
     position: relative;
     display: inline-block;
+    /* Ensure overlays do not spill outside the image container */
+    overflow: hidden;
 }
 
 .more-productions-title {
     position: absolute;
     bottom: 16px;
-    right: 24px;
+    /* Constrain within parent with symmetric side insets */
+    left: 12px;
+    right: 12px;
     color: #fff;
     font-size: 2rem;
     opacity: 0;
     border-radius: 2;
     transition: opacity 0.4s ease;
     pointer-events: none;
-    white-space: nowrap;
+    /* Allow wrapping so long titles stay inside container */
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    text-align: right;
 }
 
 .more-production-image:hover .more-productions-title {
