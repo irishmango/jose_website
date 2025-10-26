@@ -54,20 +54,40 @@
 
 
 
-    /* Hero title */
+    /* Hero: bottom banner with top fade on mobile */
+    .hero .main {
+        position: relative;
+    }
+
     .main-title {
-        left: 24px;
-        bottom: 56px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 4;
+        margin: 0;
+        padding: 16px 16px 20px;
+        text-align: start;
+        color: #fff;
+        /* Opaque banner that fades out at its top */
+        background: linear-gradient(to top,
+                rgba(255, 255, 255, 1) 0%,
+                rgba(255, 255, 255, 1) 20%,
+                rgba(255, 255, 255, 1) 40%,
+                rgba(255, 255, 255, 1) 70%,
+                rgb(255, 255, 255, 0.4) 100%);
     }
 
     .main-title .name {
-        font-size: 2rem;
+        font-size: clamp(1.6rem, 7vw, 2rem);
         font-weight: 400;
+        color: #000000;
     }
 
     .main-title .subtitle {
-        font-size: 1.5rem;
-        font-weight: 400;
+        font-size: clamp(1rem, 5vw, 1.4rem);
+        font-weight: 300;
+        color: #2e2e2e;
     }
 
     /* Biography layout → column */
