@@ -566,7 +566,7 @@ section {
     color: #eaeaea;
     font-size: 1rem;
     line-height: 1.7;
-    max-width: 420px;
+    max-width: 500px;
 }
 
 .bio-text p:first-child {
@@ -575,7 +575,7 @@ section {
 
 .bio-photo img {
     display: block;
-    max-width: 520px;
+    max-width: 420px;
     width: 100%;
     height: auto;
     border-radius: 4px;
