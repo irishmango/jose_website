@@ -108,7 +108,8 @@ if (closeBtn) {
                     'Born in Puerto Rico, José Cortés completed the Ofelia D’Acosta Acting Academy as well as the Escuela Central de Artes Visuales in San Juan. He studied Spanish literature at the University of Puerto Rico and gained diverse artistic experience in dance, theater, and film.',
                     'His path then led him to Berlin, where he completed a bachelor’s and master’s degree in opera singing. He worked as an assistant director at the Deutsche Oper Berlin, the Staatsoper Berlin, and the Oper Graz, among others. This was followed by seminars and directing workshops with Tatjana Gürbaca, Claus Guth, Hans Neuenfels, Nadja Loschky, and Katharina Wagner.',
                     'His productions include La Bohème, Così fan tutte, Die Fledermaus, La Calisto, the world premiere of Lovelease, as well as the first festival performance at Goetheplatz with the orchestra and soloists of the Bayreuth Festival.',
-                    'On March 15, 2025, Cortés makes his debut with Puccini’s Tosca at the Staatstheater Wiesbaden.'
+                    'On March 15, 2025, Cortés makes his debut with Puccini’s Tosca at the Staatstheater Wiesbaden.',
+                    'In 2025, Cortés made his debut as a film director with The Answering Machine.'
                 ],
                 review1: `(<em>translated from german</em>)<br>
                 Of all works, it is Giacomo Puccini’s “Tosca” — one of the top ten operas worldwide — with which José Cortés successfully makes his directing debut at the Staatstheater Wiesbaden. The audience celebrates the premiere with rapturous applause and standing ovations. The prime catalysts are Chin Chao Lin and Sinéad Campbell Wallace. The Taiwanese conductor and the Irish soprano share a Tosca history and know how to unleash blazing expressivity with great subtlety. Cortés aligns his concept of a profound psychological portrait with this and accepts that much is sung at the footlights.<br>
@@ -153,7 +154,8 @@ if (closeBtn) {
                     'In Puerto Rico geboren, absolvierte José Cortés die Schauspielakademie Ofelia D’Acosta sowie die Escuela Central de Artes Visuales in San Juan. Er studierte spanische Literatur an der Universidad de Puerto Rico und sammelte vielseitige künstlerische Erfahrungen in den Bereichen Tanz, Theater und Film.',
                     'Sein Weg führte ihn anschließend nach Berlin, wo er ein Bachelor- und Masterstudium im Operngesang absolvierte. Als Regieassistent war er unter anderem an der Deutschen Oper Berlin, der Staatsoper Berlin und der Oper Graz tätig. Es folgten Seminare und Regie-Workshops bei Tatjana Gürbaca, Claus Guth, Hans Neuenfels, Nadja Loschky und Katharina Wagner.',
                     'Zu seinen Inszenierungen zählen La Bohème, Così fan tutte, Die Fledermaus, La Calisto, die Uraufführung von Lovelease sowie die erste Festspielarbeit am Goetheplatz mit Orchester und Solisten der Bayreuther Festspiele.',
-                    'Am 15. März 2025 debütiert Cortés mit Tosca von Puccini am Staatstheater Wiesbaden.'
+                    'Am 15. März 2025 debütiert Cortés mit Tosca von Puccini am Staatstheater Wiesbaden.',
+                    '2025 feierte Cortés sein Debut als Filmregisseur mit The Answering Machine.'
                 ],
                 review1: `Ausgerechnet mit Giacomo Puccinis „Tosca“, einer der Top-Ten Opernwerke weltweit, meistert José Cortés sein Regiedebüt am Staatstheater Wiesbaden. Das Publikum feiert die Premiere mit frenetischem Applaus und Standing Ovations. Ursächlicher Auslöser dafür sind Chin Chao Lin und Sinéad Campbell Wallace. Der taiwanische Dirigent und die irische Sopranistin haben eine gemeinsame Tosca-Geschichte und verstehen sich darauf, glühende Expressivität überaus subtil zu entfesseln. José Cortés stimmt sein Konzept einer tiefgreifenden Seelenschau darauf ab und nimmt dabei in Kauf, dass viel an der Rampe gesungen wird.<br>
                 Die legendäre Tosca mit Maria Callas saß in seinem Hinterkopf, als sich José Cortés mit dem Stoff auseinandersetzte. Er beschäftigte sich mit dem Drama La Tosca von Victorien Sardou, das Giuseppe Giacosa und Luigi Illica als Grundlage für das Libretto nutzten, und vertiefte sich in die Psyche der Floria Tosca. Das Unausgesprochene sichtbar machen, gilt seine Absicht.<br>
@@ -348,11 +350,34 @@ if (closeBtn) {
             bioText.innerHTML = t.long.biography.map(p => `<p>${p}</p>`).join('');
         }
 
-        // Reviews: single review block on homepage
-        const reviewText = document.querySelector('.review-text');
+        // Reviews: scope content swap to Tosca review only
+        const reviewText = document.getElementById('tosca-review-text');
         if (reviewText && t.long && t.long.review1) {
             reviewText.innerHTML = t.long.review1;
         }
+
+        // Answering Machine reviews: toggle EN/DE blocks visibility based on current lang
+        const showDe = lang === 'de';
+        const enBlocks = document.querySelectorAll('.reviews .review-text--en');
+        const deBlocks = document.querySelectorAll('.reviews .review-text--de');
+        enBlocks.forEach((el) => {
+            if (showDe) {
+                el.style.display = 'none';
+                el.setAttribute('aria-hidden', 'true');
+            } else {
+                el.style.display = '';
+                el.setAttribute('aria-hidden', 'false');
+            }
+        });
+        deBlocks.forEach((el) => {
+            if (showDe) {
+                el.style.display = '';
+                el.setAttribute('aria-hidden', 'false');
+            } else {
+                el.style.display = 'none';
+                el.setAttribute('aria-hidden', 'true');
+            }
+        });
 
         // Creative team role labels on project pages
         translateCreativeTeamLabels(lang);
