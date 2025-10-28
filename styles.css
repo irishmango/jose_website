@@ -50,6 +50,28 @@ section {
     padding: 0;
 }
 
+/* Global, equal vertical spacing between sections */
+:root {
+    --section-gap: 80px;
+}
+
+/* Add a little space after the hero; keep its visual height intact */
+.hero {
+    padding-bottom: var(--section-gap);
+}
+
+/* Apply equal spacing to all other sections */
+section:not(.hero) {
+    padding-top: var(--section-gap);
+    padding-bottom: var(--section-gap);
+}
+
+@media (max-width: 768px) {
+    :root {
+        --section-gap: 56px;
+    }
+}
+
 
 .main {
     position: relative;
@@ -81,7 +103,6 @@ section {
     display: flex;
     flex-direction: row;
     align-items: start;
-    margin: 45px;
 
 }
 
@@ -226,7 +247,6 @@ section {
     display: flex;
     flex-direction: row;
     align-items: start;
-    margin: 45px;
 }
 
 .reviews-content {
@@ -268,6 +288,15 @@ section {
     line-height: 1.7;
     margin-bottom: 24px;
     color: #eaeaea;
+}
+
+/* Initial language-dependent visibility to avoid flash before JS runs */
+html[lang="en"] .reviews .review-text--de {
+    display: none;
+}
+
+html[lang="de"] .reviews .review-text--en {
+    display: none;
 }
 
 .review-source {
@@ -424,7 +453,6 @@ section {
     display: flex;
     flex-direction: row;
     align-items: start;
-    margin: 45px;
 }
 
 .projects-content {
@@ -547,7 +575,6 @@ section {
     display: flex;
     flex-direction: row;
     align-items: start;
-    margin: 45px;
 }
 
 
