@@ -100,7 +100,7 @@ if (closeBtn) {
                 ROLE: 'Opera Director',
                 REPRESENTATION: 'representation:'
             },
-            heroSubtitle: '- Opera Director',
+            heroSubtitle: 'Opera Director',
             backToTopTitle: 'Go to top',
             nextToggle: 'DE',
             long: {
@@ -146,7 +146,7 @@ if (closeBtn) {
                 ROLE: 'Opernregisseur',
                 REPRESENTATION: 'Vertretung:'
             },
-            heroSubtitle: '- Opernregisseur',
+            heroSubtitle: 'Opernregisseur',
             backToTopTitle: 'Nach oben',
             nextToggle: 'EN',
             long: {
