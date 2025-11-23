@@ -134,7 +134,7 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(5, max-content);
+    grid-template-columns: repeat(6, max-content);
     justify-content: center;
     /* center whole grid, so final row is centered too */
     align-items: center;

@@ -42,7 +42,7 @@
     }
 
     .grid {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         gap: clamp(6px, 2vw, 16px);
         padding: 24px 16px;
     }
