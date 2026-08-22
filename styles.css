@@ -331,7 +331,7 @@ section { padding: 120px 40px; }
 .more-label { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--silver-dim); margin-bottom: 20px; }
 .more-strip { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 8px; }
 .more-item {
-  position: relative; flex: 0 0 140px; aspect-ratio: 3/4; background-size: cover; background-position: center;
+  position: relative; flex: 0 0 140px; height: 187px; background-size: cover; background-position: center;
   border-radius: 2px; overflow: hidden; text-decoration: none;
   filter: grayscale(0.8) brightness(0.75);
   transition: filter .3s ease, flex-basis .4s ease;
@@ -346,7 +346,7 @@ section { padding: 120px 40px; }
 }
 .more-item:hover .title { opacity: 1; transform: translateY(0); }
 @media (max-width: 700px) {
-  .more-item { flex-basis: 120px; }
+  .more-item { flex-basis: 120px; height: 160px; }
   .more-item:hover { flex-basis: 120px; }
   .more-item .title { opacity: 1; transform: none; }
 }
