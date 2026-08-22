@@ -68,14 +68,12 @@ body {
   font-family: 'Synonym', system-ui, sans-serif; font-weight: 400; text-transform: uppercase; letter-spacing: 0.08em;
   font-size: 0.8rem; padding-bottom: 4px; border-bottom: 1px solid transparent;
 }
-.site-navbar-links a:hover { color: var(--bone); }
 .site-navbar-links a.active { color: var(--bone); border-color: var(--silver); font-weight: 700; }
 .site-navbar-lang {
   background: none; border: none; color: var(--bone-dim);
   font-family: 'Synonym', sans-serif; font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase;
   cursor: pointer; transition: color .2s;
 }
-.site-navbar-lang:hover { color: var(--silver); }
 @media (max-width: 700px) {
   .site-navbar-inner { height: 60px; padding: 0 20px; gap: 12px; }
   .site-navbar-links { gap: 14px; }
@@ -127,13 +125,13 @@ section { padding: 120px 40px; }
   position: relative; display: block; width: 100%; height: 200px; overflow: hidden; border-radius: 2px;
   text-decoration: none; transition: height .4s ease;
 }
-.production-row:hover, .production-row:focus-visible { height: 280px; }
+.production-row:focus-visible { height: 280px; }
 .production-media {
   position: absolute; inset: 0; background-size: cover; background-position: center;
   filter: grayscale(0.8) brightness(0.72) contrast(1.08);
   transition: filter .5s ease;
 }
-.production-row:hover .production-media, .production-row:focus-visible .production-media {
+.production-row:focus-visible .production-media {
   filter: grayscale(0) brightness(0.92) contrast(1.02);
 }
 .production-wash {
@@ -141,12 +139,12 @@ section { padding: 120px 40px; }
   background: linear-gradient(180deg, rgba(24,24,24,0) 45%, rgba(24,24,24,0.95) 100%);
   opacity: 0; transition: opacity .4s ease;
 }
-.production-row:hover .production-wash, .production-row:focus-visible .production-wash { opacity: 1; }
+.production-row:focus-visible .production-wash { opacity: 1; }
 .production-copy {
   position: absolute; left: 0; right: 0; bottom: 0; padding: 18px 22px;
   opacity: 0; transform: translateY(10px); transition: opacity .35s ease, transform .35s ease;
 }
-.production-row:hover .production-copy, .production-row:focus-visible .production-copy { opacity: 1; transform: translateY(0); }
+.production-row:focus-visible .production-copy { opacity: 1; transform: translateY(0); }
 .production-title {
   font-family: 'Synonym', system-ui, sans-serif; font-weight: 500; text-transform: uppercase; letter-spacing: 0.02em;
   font-size: clamp(1.1rem, 2vw, 1.6rem);
@@ -179,7 +177,7 @@ section { padding: 120px 40px; }
   transition: padding-left .3s ease;
 }
 .press-list .press-entry:last-child { border-bottom: 1px solid var(--hair); }
-.press-entry:hover, .press-entry:focus-visible { padding-left: 12px; }
+.press-entry:focus-visible { padding-left: 12px; }
 .press-entry:focus-visible { outline: none; }
 .press-entry:focus-visible .press-quote { color: var(--bone); }
 .press-quote {
@@ -194,7 +192,7 @@ section { padding: 120px 40px; }
   opacity: 0; transform: translateY(-50%) translateX(-8px);
   transition: opacity .3s ease, transform .3s ease;
 }
-.press-entry:hover .press-arrow, .press-entry:focus-visible .press-arrow { opacity: 1; transform: translateY(-50%) translateX(0); }
+.press-entry:focus-visible .press-arrow { opacity: 1; transform: translateY(-50%) translateX(0); }
 
 /* review modal */
 .review-modal {
@@ -215,7 +213,6 @@ section { padding: 120px 40px; }
   position: absolute; top: 20px; right: 20px; background: none; border: none; color: var(--bone-dim);
   font-size: 0.74rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; transition: color .2s;
 }
-.review-modal-close:hover { color: var(--silver); }
 .review-modal-title {
   font-family: 'Synonym', system-ui, sans-serif; font-weight: 400; text-transform: uppercase; letter-spacing: 0.02em;
   font-size: 1.3rem; color: var(--bone); margin: 0 0 20px;
@@ -237,7 +234,6 @@ section { padding: 120px 40px; }
 .contact-row { display: flex; flex-wrap: wrap; gap: 56px; justify-content: center; align-items: center; }
 .contact-details { text-align: center; }
 .contact-details a { text-decoration: none; color: var(--bone); border-bottom: 1px solid var(--silver-dim); }
-.contact-details a:hover { color: var(--silver); }
 .contact-details .role { color: var(--bone-dim); font-size: 0.9rem; margin-bottom: 18px; }
 .contact-details .field { font-size: 1rem; margin-bottom: 6px; }
 .contact-photo {
@@ -250,7 +246,6 @@ section { padding: 120px 40px; }
   border-top: 1px solid var(--hair); background: var(--ink-2);
 }
 .site-footer a { text-decoration: none; color: var(--bone-dim); }
-.site-footer a:hover { color: var(--silver); }
 .site-footer .flinks { display: flex; gap: 18px; }
 @media (max-width: 600px) { .contact-photo { width: 150px; } }
 
@@ -262,7 +257,6 @@ section { padding: 120px 40px; }
   text-decoration: none; font-family: 'Synonym', sans-serif; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase;
   cursor: pointer; transition: color .2s;
 }
-.project-back:hover { color: var(--silver); }
 .project-main { max-width: 1000px; margin: 0 auto; padding: 100px 40px 120px; }
 .project-hero {
   width: 100%; aspect-ratio: 16/9; background-size: cover; background-position: center; border-radius: 2px;
@@ -305,7 +299,6 @@ section { padding: 120px 40px; }
   font-family: 'Synonym', sans-serif; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase;
   cursor: pointer; transition: color .2s;
 }
-.lightbox-close:hover { color: var(--silver); }
 .lightbox-count {
   position: absolute; top: 30px; left: 36px; color: var(--bone-dim);
   font-family: 'Synonym', sans-serif; font-size: 0.78rem; letter-spacing: 0.1em; font-variant-numeric: tabular-nums;
@@ -314,7 +307,6 @@ section { padding: 120px 40px; }
   position: absolute; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--bone);
   font-size: 2.2rem; line-height: 1; cursor: pointer; padding: 16px; transition: color .2s, opacity .2s;
 }
-.lightbox-arrow:hover { color: var(--silver); }
 .lightbox-prev { left: 8px; }
 .lightbox-next { right: 8px; }
 @media (max-width: 600px) {
@@ -336,7 +328,6 @@ section { padding: 120px 40px; }
   filter: grayscale(0.8) brightness(0.75);
   transition: filter .3s ease, flex-basis .4s ease;
 }
-.more-item:hover { flex-basis: 220px; filter: grayscale(0) brightness(0.9); }
 .more-item .title {
   position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 12px;
   background: linear-gradient(180deg, rgba(19,17,16,0) 45%, rgba(19,17,16,0.92) 100%);
@@ -344,10 +335,8 @@ section { padding: 120px 40px; }
   font-size: 0.8rem; color: var(--bone); opacity: 0; transform: translateY(6px);
   transition: opacity .3s ease, transform .3s ease;
 }
-.more-item:hover .title { opacity: 1; transform: translateY(0); }
 @media (max-width: 700px) {
   .more-item { flex-basis: 120px; height: 160px; }
-  .more-item:hover { flex-basis: 120px; }
   .more-item .title { opacity: 1; transform: none; }
 }
 
@@ -355,3 +344,31 @@ section { padding: 120px 40px; }
    their own dedicated stylesheets (imprint_styles.css / privacy_policy_styles.css)
    which are loaded after this file and fully own their layout; this file only
    needs to supply the shared reset and @font-face above for them. */
+
+/* ============ HOVER — only on devices with a real pointer ============
+   Keeps every hover-triggered effect (size changes, reveals, color shifts)
+   from getting stuck "on" after a tap on touch devices. Keyboard/focus-visible
+   equivalents for the layout-affecting ones are defined inline above and stay
+   active everywhere. */
+@media (hover: hover) and (pointer: fine) {
+  .site-navbar-links a:hover { color: var(--bone); }
+  .site-navbar-lang:hover { color: var(--silver); }
+
+  .production-row:hover { height: 280px; }
+  .production-row:hover .production-media { filter: grayscale(0) brightness(0.92) contrast(1.02); }
+  .production-row:hover .production-wash { opacity: 1; }
+  .production-row:hover .production-copy { opacity: 1; transform: translateY(0); }
+
+  .press-entry:hover { padding-left: 12px; }
+  .press-entry:hover .press-arrow { opacity: 1; transform: translateY(-50%) translateX(0); }
+
+  .review-modal-close:hover { color: var(--silver); }
+  .contact-details a:hover { color: var(--silver); }
+  .site-footer a:hover { color: var(--silver); }
+  .project-back:hover { color: var(--silver); }
+  .lightbox-close:hover { color: var(--silver); }
+  .lightbox-arrow:hover { color: var(--silver); }
+
+  .more-item:hover { flex-basis: 220px; filter: grayscale(0) brightness(0.9); }
+  .more-item:hover .title { opacity: 1; transform: translateY(0); }
+}
