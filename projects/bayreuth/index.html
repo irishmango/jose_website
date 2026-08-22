@@ -5,136 +5,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Festspielnacht am Goldbergsee — José Cortés</title>
-    <link rel="stylesheet" href="../project_page_styles.css">
-    <link rel="stylesheet" href="../project_page_adaptive_style.css">
+    <link rel="stylesheet" href="../../styles.css">
     <script src="../../script.js" defer></script>
 </head>
 
 <body>
-    <section class="project-page">
-        <button class="menu-btn" aria-label="Menu">
-            <span class="menu-label">MENU</span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-        <div class="drawer" id="drawer">
-            <button class="close-btn" id="closeDrawer">CLOSE</button>
-            <nav class="drawer-nav">
-                <a href="/">HOME</a>
-                <a href="../../index.html#biography">BIOGRAPHY</a>
-                <a href="../../index.html#projects">PROJECTS</a>
-                <a href="../../index.html#reviews">REVIEWS</a>
-                <a href="../../index.html#contact">CONTACT</a>
-                <button type="button" id="langToggle" class="lang-toggle" aria-label="Switch language">DE</button>
-            </nav>
+    <nav class="site-navbar">
+        <div class="site-navbar-inner">
+            <a class="site-navbar-mark" href="../../index.html">JOSÉ CORTÉS</a>
+            <ul class="site-navbar-links">
+                <li><a href="../../index.html#biography" data-nav="biography">Biography</a></li>
+                <li><a href="../../index.html#projects" data-nav="projects">Productions</a></li>
+                <li><a href="../../index.html#reviews" data-nav="reviews">Press</a></li>
+                <li><a href="../../index.html#contact" data-nav="contact">Contact</a></li>
+            </ul>
+            <button type="button" class="site-navbar-lang" aria-label="Switch language">DE</button>
         </div>
-        <div class="project-container">
-            <div class="project-label">PROJECTS</div>
-            <div class="project-content">
+    </nav>
 
-                <div class="project-heading">
+    <a class="project-back" href="../../index.html#projects">&larr; Productions</a>
+
+    <main class="project-main">
+        <div class="project-hero" style="background-image:url('../../assets/bayreuth/goldberg_5.webp');"></div>
+        <div class="project-head">
+            <div class="project-head-row">
+                <div>
+                    <div class="eyebrow" data-en="Bayreuth Festival" data-de="Bayreuther Festspiele">Bayreuth Festival</div>
                     <h1 class="project-title">Festspielnacht am Goldbergsee</h1>
-                    <p class="project-subtitle">Bayreuth</p>
                 </div>
-
-                <div class="project-main-image">
-                    <img src="../../assets/bayreuth/goldberg_5.webp" alt="Goldberg Scene Main">
-                </div>
-
-                <div class="project-gallery">
-                    <div class="gallery-row">
-                        <img src="../../assets/bayreuth/goldberg_3.webp" alt="Goldberg Scene 1">
-                    </div>
-                    <div class="gallery-row">
-                        <img src="../../assets/bayreuth/goldberg_6.webp" alt="Goldberg Scene 2">
-                        <img src="../../assets/bayreuth/goldberg_7.webp" alt="Goldberg Scene 3">
-                    </div>
-                    <div class="gallery-row">
-                        <img src="../../assets/bayreuth/goldberg_8.webp" alt="Boheme Scene 4">
-                        <img src="../../assets/bayreuth/goldberg_9.webp" alt="Boheme Scene 5">
-                    </div>
-                    <div class="gallery-row">
-                        <img src="../../assets/bayreuth/goldberg_10.webp" alt="Goldberg Scene 6">
-                        <img src="../../assets/bayreuth/goldberg_12.webp" alt="Goldberg Scene 7">
-                    </div>
-                    <div class="gallery-row">
-                        <img src="../../assets/bayreuth/goldberg_13.webp" alt="Goldberg Scene 8">
-                    </div>
-                    <div class="gallery-row">
-                        <img src="../../assets/bayreuth/goldberg_14.webp" alt="Goldberg Scene 9">
-                    </div>
-                </div>
-
-
-                <div class="creative-team">
-                    <div class="team-column">
-                        <p><strong>Regie:</strong> José Cortés</p>
-                        <p><strong>Bühnenbild:</strong> Joan Guillen</p>
-                        <p><strong>Belichtung:</strong> Alekos Anastasiou</p>
-                        <p><strong>Fotos:</strong> David Ketel, Mark Lübke</p>
-                    </div>
-                    <div class="team-column">
-                        <p><strong>Sopran:</strong> Tatiana Lisnic</p>
-                        <p><strong>Bass-Bariton:</strong> Andrii Ganchuk</p>
-                        <p><strong>Tenor:</strong> Jose Manuel Delicado</p>
-                        <p><strong>Tenor:</strong> Ivan Sanchez Aguila</p>
-                    </div>
-                </div>
-
-                <div class="more-productions">
-                    <p>More Productions</p>
-                    <div class="more-gallery">
-                        <div class="more-production-image">
-                            <a href="../tosca/" aria-label="Tosca project" title="Tosca">
-                                <img src="../../assets/tosca_main.jpg" alt="Tosca">
-                                <span class="more-productions-title">Tosca</span>
-                            </a>
-                        </div>
-                        <div class="more-production-image">
-                            <a href="../fledermaus/" aria-label="Fledermaus project" title="Fledermaus">
-                                <img src="../../assets/fledermaus_main.jpg" alt="Fledermaus">
-                                <span class="more-productions-title">Fledermaus</span>
-                            </a>
-                        </div>
-                        <div class="more-production-image">
-                            <a href="../lovelease/" aria-label="Lovelease project" title="Lovelease">
-                                <img src="../../assets/lovelease_bed.webp" alt="Lovelease">
-                                <span class="more-productions-title">Lovelease</span>
-                            </a>
-                        </div>
-                        <div class="more-production-image">
-                            <a href="../answering_machine/index.html" aria-label="Answering Machine project"
-                                title="Answering Machine">
-                                <img src="../../assets/answering_machine/answering_machine_main.webp"
-                                    alt="Answering Machine">
-                                <span class="more-productions-title">Answering Machine</span>
-                            </a>
-                        </div>
-                        <div class="more-production-image">
-                            <a href="../cosi/index.html" aria-label="Cosi project" title="Cosi">
-                                <img src="../../assets/cosi/cosi_main.webp" alt="Cosi">
-                                <span class="more-productions-title">Cosi fan tutte</span>
-                            </a>
-                        </div>
-                        <div class="more-production-image">
-                            <a href="../boheme/" aria-label="Boheme project" title="La Bohème">
-                                <img src="../../assets/boheme_main.jpg" alt="Boheme">
-                                <span class="more-productions-title">La Bohème</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <div class="project-place" data-en="Bayreuth" data-de="Bayreuth">Bayreuth</div>
             </div>
         </div>
-    </section>
-    <footer class="footer">
-        <div class="footer-links">
-            <a href="../../imprint/" class="footer-link">imprint</a>
-            <a href="../../privacy/" class="footer-link">privacy policy</a>
+
+        <div class="project-gallery-grid">
+                <button type="button" class="project-gallery-cell reveal" style="background-image:url('../../assets/bayreuth/goldberg_3.webp');" aria-label="Photo"></button>
+                <button type="button" class="project-gallery-cell reveal" style="background-image:url('../../assets/bayreuth/goldberg_6.webp');" aria-label="Photo"></button>
+                <button type="button" class="project-gallery-cell reveal" style="background-image:url('../../assets/bayreuth/goldberg_7.webp');" aria-label="Photo"></button>
+                <button type="button" class="project-gallery-cell reveal" style="background-image:url('../../assets/bayreuth/goldberg_8.webp');" aria-label="Photo"></button>
+                <button type="button" class="project-gallery-cell reveal" style="background-image:url('../../assets/bayreuth/goldberg_9.webp');" aria-label="Photo"></button>
+                <button type="button" class="project-gallery-cell reveal" style="background-image:url('../../assets/bayreuth/goldberg_10.webp');" aria-label="Photo"></button>
+                <button type="button" class="project-gallery-cell reveal" style="background-image:url('../../assets/bayreuth/goldberg_12.webp');" aria-label="Photo"></button>
+                <button type="button" class="project-gallery-cell reveal" style="background-image:url('../../assets/bayreuth/goldberg_13.webp');" aria-label="Photo"></button>
+                <button type="button" class="project-gallery-cell reveal" style="background-image:url('../../assets/bayreuth/goldberg_14.webp');" aria-label="Photo"></button>
         </div>
-        <div class="footer-copyright">©2025 JOSÉ CORTES</div>
+
+        <div class="project-credits">
+            <div class="project-team">
+                        <div class="row"><span class="label">Regie:</span><span>José Cortés</span></div>
+                        <div class="row"><span class="label">Bühnenbild:</span><span>Joan Guillen</span></div>
+                        <div class="row"><span class="label">Belichtung:</span><span>Alekos Anastasiou</span></div>
+                        <div class="row"><span class="label">Fotos:</span><span>David Ketel, Mark Lübke</span></div>
+            </div>
+            <div class="project-team">
+                        <div class="row"><span class="label">Sopran:</span><span>Tatiana Lisnic</span></div>
+                        <div class="row"><span class="label">Bass-Bariton:</span><span>Andrii Ganchuk</span></div>
+                        <div class="row"><span class="label">Tenor:</span><span>Jose Manuel Delicado</span></div>
+                        <div class="row"><span class="label">Tenor:</span><span>Ivan Sanchez Aguila</span></div>
+            </div>
+        </div>
+
+        <div class="more-productions">
+            <div class="more-label">More Productions</div>
+            <div class="more-strip">
+                <a class="more-item" href="../tosca/" style="background-image:url('../../assets/tosca/tosca_5.webp');">
+                    <div class="title">Tosca</div>
+                </a>
+                <a class="more-item" href="../answering_machine/" style="background-image:url('../../assets/answering_machine/answering_machine_main.webp');">
+                    <div class="title">The Answering Machine</div>
+                </a>
+                <a class="more-item" href="../lovelease/" style="background-image:url('../../assets/lovelease_bed.webp');">
+                    <div class="title">Lovelease</div>
+                </a>
+                <a class="more-item" href="../fledermaus/" style="background-image:url('../../assets/fledermaus/fledermaus_2.webp');">
+                    <div class="title">Die Fledermaus</div>
+                </a>
+                <a class="more-item" href="../boheme/" style="background-image:url('../../assets/boheme/boheme_9.webp');">
+                    <div class="title">La Bohème</div>
+                </a>
+                <a class="more-item" href="../cosi/" style="background-image:url('../../assets/cosi/cosi_3.webp');">
+                    <div class="title">Così fan tutte</div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="flinks">
+            <a href="../../imprint/">imprint</a>
+            <a href="../../privacy/">privacy policy</a>
+        </div>
+        <div>&copy;2025 JOSÉ CORTÉS</div>
     </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <div class="lightbox-img" id="lightboxImg"></div>
+        <div class="lightbox-count" id="lightboxCount"></div>
+        <button class="lightbox-close" id="lightboxClose">Close</button>
+        <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Previous">&#8249;</button>
+        <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Next">&#8250;</button>
+    </div>
 </body>
 
 </html>

@@ -9,32 +9,26 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/jose_logo_16.png?v=1">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/jose_logo_180.png?v=1">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="adaptive_styles.css">
-    <!-- SEO: English biography summary for search and link previews -->
     <meta name="description"
         content="Puerto Rico–born opera director José Cortés trained in San Juan and Berlin, assisted at Deutsche Oper and Staatsoper Berlin, and directs La Bohème, Così fan tutte, Die Fledermaus; Tosca debut at Staatstheater Wiesbaden.">
     <meta name="robots" content="index,follow">
 
-    <!-- Open Graph (Facebook, WhatsApp, etc.) -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="José Cortés – Opera Director">
     <meta property="og:description"
         content="Puerto Rico–born opera director José Cortés trained in San Juan and Berlin, assisted at Deutsche Oper and Staatsoper Berlin, and directs La Bohème, Così fan tutte, Die Fledermaus; Tosca debut at Staatstheater Wiesbaden.">
     <meta property="og:site_name" content="José Cortés">
     <meta property="og:locale" content="en_US">
-    <!-- Prefer a portrait PNG for broad preview support; add WebP as an additional candidate -->
     <meta property="og:image" content="assets/jose_portrait_1.webp">
     <meta property="og:image:alt" content="Portrait of opera director José Cortés">
     <meta property="og:image" content="assets/lovelease_bed.png">
 
-    <!-- Twitter (X) Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="José Cortés – Opera Director">
     <meta name="twitter:description"
         content="Puerto Rico–born opera director José Cortés trained in San Juan and Berlin, assisted at Deutsche Oper and Staatsoper Berlin, and directs La Bohème, Così fan tutte, Die Fledermaus; Tosca debut at Staatstheater Wiesbaden.">
     <meta name="twitter:image" content="assets/jose_portrait_1.webp">
 
-    <!-- Structured Data: Person -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -45,430 +39,350 @@
             "url": "/",
             "description": "Puerto Rico–born opera director trained in San Juan and Berlin; productions include La Bohème, Così fan tutte, Die Fledermaus; Tosca debut at Staatstheater Wiesbaden."
         }
-        </script>
-    <title>José Cortes</title>
+    </script>
+    <title>José Cortés</title>
 </head>
 
 <body>
-    <div class="page-wrapper">
-        <button class="menu-btn" aria-label="Menu">
-            <span class="menu-label">MENU</span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-        <div class="drawer" id="drawer">
-            <button class="close-btn" id="closeDrawer">CLOSE</button>
-            <nav class="drawer-nav">
-                <a href="#biography">BIOGRAPHY</a>
-                <a href="#projects">PROJECTS</a>
-                <a href="#reviews">REVIEWS</a>
-                <a href="#contact">CONTACT</a>
-                <button type="button" id="langToggle" class="lang-toggle" aria-label="Switch language">DE</button>
-            </nav>
+    <nav class="site-navbar">
+        <div class="site-navbar-inner">
+            <a class="site-navbar-mark" href="#hero">JOSÉ CORTÉS</a>
+            <ul class="site-navbar-links">
+                <li><a href="#biography" data-spy="biography">Biography</a></li>
+                <li><a href="#projects" data-spy="projects">Productions</a></li>
+                <li><a href="#reviews" data-spy="reviews">Press</a></li>
+                <li><a href="#contact" data-spy="contact">Contact</a></li>
+            </ul>
+            <button type="button" class="site-navbar-lang" aria-label="Switch language">DE</button>
         </div>
-        <section class="hero" id="hero">
-            <div class="main">
-                <div class="main-overlay"></div>
-                <img class="main-image" src="assets/lovelease_bed.webp" alt="Opera Scene">
-                <div class="main-title">
-                    <span class="name">JOSÉ CORTÉS</span><br>
-                    <span class="subtitle">Opera Director</span>
-                </div>
-            </div>
-        </section>
+    </nav>
 
-        <section class="projects" id="projects">
-            <div class="section-container projects-container">
-                <div class="section-label">PROJECTS</div>
-                <div class="projects-content">
-                    <div class="projects-gallery">
-                        <div class="project-image">
-                            <a href="./projects/answering_machine/" aria-label="The Answering Machine"
-                                title="The Answering Machine - Short Film">
-                                <img src="assets/answering_machine/answering_machine_cry.png"
-                                    alt="The Answering Machine" id="answering_machine">
-                                <span class="project-title">The Answering Machine - Feature Film</span>
-                            </a>
-                        </div>
-                        <div class="project-image">
-                            <a href="./projects/tosca/" aria-label="Tosca project" title="Tosca">
-                                <img src="assets/tosca_main.jpg" alt="Tosca" id="tosca">
-                                <span class="project-title">Tosca</span>
-                            </a>
-                        </div>
-                        <div class="project-image">
-                            <a href="./projects/lovelease/" aria-label="Lovelease project" title="Lovelease">
-                                <img src="assets/lovelease_bed.webp" alt="Lovelease" id="lovelease">
-                                <span class="project-title">Lovelease</span>
-                            </a>
-                        </div>
-                        <div class="project-image">
-                            <a href="./projects/fledermaus/" aria-label="Die Fledermaus project" title="Die Fledermaus">
-                                <img src="assets/fledermaus_main.jpg" alt="Die Fledermaus" id="fledermaus">
-                                <span class="project-title">Fledermaus</span>
-                            </a>
-                        </div>
-                        <div class="project-image">
-                            <a href="./projects/boheme/" aria-label="La Bohème project" title="La Bohème">
-                                <img src="assets/boheme/boheme_9.webp" alt="La Bohème" id="boheme">
-                                <span class="project-title">La Bohème</span>
-                            </a>
-                        </div>
-                        <div class="project-image">
-                            <a href="./projects/cosi/" aria-label="Cosi project" title="Cosi fan tutte">
-                                <img src="assets/cosi/cosi_main.webp" alt="Cosi fan tutte" id="cosi">
-                                <span class="project-title">Così fan tutte</span>
-                            </a>
-                        </div>
-                        <div class="project-image">
-                            <a href="./projects/bayreuth/" aria-label="Bayreuth project" title="Bayreuth">
-                                <img src="assets/bayreuth/goldberg_5.webp" alt="Goldberg Scene Main" id="bayreuth">
-                                <span class="project-title">Festspielnacht am Goldbergsee</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="biography" id="biography">
-            <div class="section-container bio-container">
-                <div class="section-label">BIOGRAPHY</div>
-                <div class="bio-content">
-                    <div class="bio-text">
-                        <p>In Puerto Rico geboren, absolvierte José Cortés die Schauspielakademie 'Ofelia D’Acosta'
-                            sowie
-                            die
-                            Escuela Central de Artes Visuales in San Juan. Er studierte spanische Literatur an der
-                            Universidad de Puerto Rico und sammelte vielseitige künstlerische Erfahrungen in den
-                            Bereichen
-                            Tanz, Theater und Film.</p>
-                        <p>Sein Weg führte ihn anschließend nach Berlin, wo er ein Bachelor- und Masterstudium im
-                            Operngesang absolvierte. Als Regieassistent war er unter anderem an der Deutschen Oper
-                            Berlin,
-                            der Staatsoper Berlin und der Oper Graz tätig. Es folgten Seminare und Regie-Workshops bei
-                            Tatjana Gürbaca, Claus Guth, Hans Neuenfels, Nadja Loschky und Katharina Wagner.</p>
-                        <p>Zu seinen Inszenierungen zählen La Bohème, Così fan tutte, Die Fledermaus, La Calisto, die
-                            Uraufführung von Lovelease sowie die erste Festspielarbeit am Goetheplatz mit Orchester und
-                            Solisten der Bayreuther Festspiele. 2025 feierte Cortés sein Debut als Filmregisseur mit The
-                            Answering
-                            Machine.</p>
-                        <p>Am 15. März 2025 debütiert Cortés mit Tosca von Puccini am Staatstheater Wiesbaden.</p>
-                    </div>
-                    <div class="bio-photo">
-                        <img src="assets/jose_headshot_dec_25.webp" alt="José Cortés Portrait">
-                    </div>
-                </div>
-        </section>
-
-
-        <section class="reviews" id="reviews">
-            <div class="section-container reviews-container">
-                <div class="section-label">REVIEWS</div>
-                <div class="reviews-content">
-                    <div class="reviews-list">
-                        <div class="review-card">
-                            <div class="review-title">The Answering Machine - 2025</div>
-                            <div class="review-text review-text--en">
-                                Cortés's premise is spare - a woman, an empty home, and the echoes of what was - yet
-                                within this austerity he locates something vast and symphonic.
-                                Each gesture, each pause, feels choreographed to the rhythm of loss.
-                                <br>
-                                The film becomes less a narrative than a composition: a cinematic sonata in minor key,
-                                written for light, breath, and the trembling of human will. Cortés's direction balances
-                                the
-                                cerebral and the sensual with remarkable poise. His camera neither intrudes nor
-                                embellishes; it watches, almost reverently, as the performer slowly sheds her mask-her
-                                art and her suffering merging into one. The editing is musical - cuts arrive like
-                                inhalations
-                                between verses, allowing emotion to resonate in the air.
-                                <br>
-                                There is a deliberate theatricality here, as if the frame itself were a proscenium arch;
-                                but
-                                instead of distancing us, it transforms the screen into an intimate confessional where
-                                performance and truth become indistinguishable. Ivon Mateljan's portrayal is nothing
-                                short of alchemical. Her face becomes a terrain of micro-expressions, every flicker of
-                                doubt or resignation caught in chiaroscuro light.
-                                <br>
-                                Beneath its minimalist exterior, The Answering Machine is a meditation on the
-                                existential
-                                cost of artistry. Cortés refuses sentimentality; he offers, instead, revelation. The
-                                film
-                                suggests that creation is not simply an act of expression, but an act of endurance - a
-                                way
-                                of surviving the silence after the curtain falls. In that silence, Cortés achieves what
-                                few
-                                filmmakers dare: he transforms solitude into symphony.
-                            </div>
-                            <div class="review-text review-text--de">
-                                (<em>aus dem Englischen übersetzt</em>)<br>
-                                Cortés’ Prämisse ist schlicht – eine Frau, ein leeres Zuhause und die Echos dessen, was
-                                einmal war – und doch entdeckt
-                                er innerhalb dieser Strenge etwas Weitreichendes und Symphonisches.Jede Geste, jede
-                                Pause wirkt wie zum Rhythmus des
-                                Verlusts choreografiert.
-                                <br>
-                                Der Film ist weniger zur Erzählung als viel mehr zu einer Komposition: eine filmische
-                                Sonate in Moll, geschrieben für
-                                Licht, Atem und das Zittern des menschlichen Willens. Cortés’ Regie balanciert das
-                                Intellektuelle und das Sinnliche mit
-                                bemerkenswerter Souveränität. Seine Kamera dringt weder ein noch schmückt sie aus; sie
-                                beobachtet- fast ehrfürchtig- wie
-                                die Darstellerin langsam ihre Maske ablegt – Kunst und Leiden verschmelzen zu einer
-                                Einheit. Der Schnitt ist musikalisch
-                                – Schnitte kommen wie Atemzüge zwischen Versen und lassen Emotion in der Luft
-                                nachklingen.
-                                <br>
-                                Eine bewusste Theatralität liegt über allem, als wäre der Rahmen selbst ein Proszenium;
-                                doch anstatt Distanz zu
-                                schaffen, verwandelt sich die Leinwand in ein intimes Bekenntnis, in dem Aufführung und
-                                Wahrheit ununterscheidbar
-                                werden. Ivon Mateljans Darstellung ist geradezu alchemistisch. Ihr Gesicht wird zur
-                                Landschaft mikrofeiner
-                                Ausdrucksformen, jedes Aufflackern von Zweifel oder Resignation wird im
-                                Chiaroscuro-Licht eingefangen.
-                                <br>
-                                Hinter seiner minimalistischen Oberfläche ist The Answering Machine eine Meditation über
-                                die existenziellen Kosten von
-                                Kunst. Cortés verzichtet auf Sentimentalität; stattdessen bietet er Offenbarung. Der
-                                Film deutet an, dass künstlerisches
-                                Schaffen nicht bloß ein Akt des Ausdrucks ist, sondern ein Akt des Durchhaltens – ein
-                                Überlebensmechanismus für die
-                                Stille nach dem Fallen des Vorhangs. In dieser Stille gelingt Cortés, was sich nur
-                                wenige Filmemacher wagen: Er
-                                verwandelt Einsamkeit in einer Symphonie.
-                            </div>
-                            <div class="review-source">The Hollywood International Indie Film & Screenplay Awards</div>
-                        </div>
-
-                        <div class="review-card">
-                            <div class="review-title">The Answering Machine - 2025</div>
-                            <div class="review-text review-text--en">
-                                José Cortes's The Answering Machine opens like a confessional whispered into the dark.
-                                It invites us into the quiet ache of a life once filled with applause— a German opera
-                                singer, trapped between the grandeur of her art and the silence of her home. What
-                                follows is not merely a film, but a recital of vulnerability, an aria of pain, and,
-                                ultimately, a reclamation of self.
-                                <br>The premise is deceptively simple: a woman, haunted by expectation. The expectations
-                                of her family. The demands of the opera world. The
-                                unrelenting standard she has built within herself. And yet, in the stillness of her
-                                domestic solitude, something unravels -and something else begins to mend. Cortes
-                                films this transformation with intimacy. The camerawork is assured, the editing taut.
-                                Each cut lands like a breath between phrases of music. Yet there is an unmistakable
-                                theatrical quality to it all-The Answering Machine often feels like a filmed monodrama,
-                                a
-                                stage performance translated into cinema. This isn't a flaw so much as a choice; the
-                                boundaries between theatre and film blur, creating a hybrid space where performance
-                                and confession become one. At the center of it all stands Ivon Mateljan, and she is
-                                extraordinary. Her singing is exquisite, but it's her silence that devastates. She wears
-                                her
-                                fragility like an aria - controlled, expressive, utterly human. The camera adores her
-                                not
-                                for her perfection, but for her willingness to crumble before it. Few performances dare
-                                to
-                                be this naked.
-                                <p></p>
-                                What begins as a story of failure becomes something far more resonant: the courage to
-                                start again. Cortés doesn't offer easy catharsis or melodrama. Instead, he gives us a
-                                portrait of quiet reinvention, where art becomes a mirror for pain-and a passage through
-                                it. By the end, The Answering Machine leaves us not with applause, but with a kind of
-                                reverent silence. The performance is over, but the echo remains.
-                            </div>
-                            <div class="review-text review-text--de">
-                                (<em>aus dem Englischen übersetzt</em>)<br>
-                                José Cortés’ The Answering Machine beginnt wie ein ins Dunkel geflüstertes Geständnis.
-                                Er lädt uns ein in den stillen
-                                Schmerz eines einst vom Applaus erfüllten Lebens – eine deutsche Opernsängerin, gefangen
-                                zwischen der Größe ihrer Kunst
-                                und der Stille ihres Zuhauses. Was folgt, ist nicht nur ein Film, sondern eine Erzählung
-                                von Verletzlichkeit, eine Arie
-                                des Schmerzes und letztlich ein Akt der Selbstbehauptung.
-                                <br>
-                                Das Ausgangsszenario ist trügerisch einfach: eine Frau, heimgesucht von Erwartungen. Die
-                                Erwartungen ihrer Familie. Die
-                                Anforderungen der Opernwelt. Der unerbittliche Maßstab, den sie in sich selbst errichtet
-                                hat. Und doch – in der Stille
-                                ihrer häuslichen Einsamkeit – beginnt sich etwas zu lösen. Und etwas anderes beginnt zu
-                                heilen. Cortés filmt diesen
-                                Wandlungsprozess mit großer Intimität. Die Kameraführung ist souverän, der Schnitt
-                                präzise. Jeder Schnitt wirkt wie ein
-                                Atemzug zwischen musikalischen Phrasen. Zugleich hat das Ganze eine unverkennbare
-                                Theatralik – The Answering Machine
-                                fühlt sich oft an wie ein gefilmtes Monodrama, eine Bühnenperformance, übersetzt für das
-                                Kino. Das ist kein Mangel
-                                sondern eine bewusste Entscheidung; die Grenzen zwischen Theater und Film verschwimmen,
-                                es entsteht ein hybrider Raum,
-                                in dem Performance und Bekenntnis eins werden. Im Zentrum steht Ivon Mateljan – und sie
-                                ist außergewöhnlich. Ihr Gesang
-                                ist exquisit, doch es ist ihr Schweigen, das erschüttert. Sie trägt ihre
-                                Zerbrechlichkeit wie eine Arie – kontrolliert,
-                                ausdrucksstark, zutiefst menschlich. Die Kamera liebt sie nicht für ihre Perfektion,
-                                sondern wegen ihrer Bereitschaft,
-                                vor ihr zu zerbrechen. Wenige Darstellungen wagen sich an diese Nacktheit.
-                                <p></p>
-                                Was als Geschichte des Scheiterns beginnt, wird zu etwas viel Tieferem: dem Mut, neu zu
-                                beginnen. Cortés bietet keine
-                                einfache Katharsis oder Melodramatik. Stattdessen schenkt er uns ein stilles Porträt der
-                                Neuerfindung- wo Kunst zum
-                                Spiegel des Schmerzes wird, und zu einem Weg hindurch. Am Ende hinterlässt The Answering
-                                Machine keinen Applaus, sondern
-                                eine Art ehrfürchtiges Schweigen. Die Vorstellung ist vorbei, doch der Nachhall bleibt.
-                            </div>
-                            <div class="review-source">The New York Film & Cinematography Awards</div>
-                        </div>
-
-                        <div class="review-card">
-                            <div class="review-title">Tosca - 2025 - Wiesbaden</div>
-                            <div class="review-text" id="tosca-review-text">
-                                Ausgerechnet mit Giacomo Puccinis „Tosca“, einer der Top-Ten Opernwerke weltweit,
-                                meistert José Cortés sein Regiedebüt
-                                am Staatstheater Wiesbaden. Das Publikum feiert die Premiere mit frenetischem Applaus
-                                und Standing Ovations.
-                                Ursächlicher Auslöser dafür sind Chin Chao Lin und Sinéad Campbell Wallace. Der
-                                taiwanische Dirigent und die irische
-                                Sopranistin haben eine gemeinsame Tosca-Geschichte und verstehen sich darauf, glühende
-                                Expressivität überaus subtil zu
-                                entfesseln. José Cortés stimmt sein Konzept einer tiefgreifenden Seelenschau darauf ab
-                                und nimmt dabei in Kauf, dass
-                                viel an der Rampe gesungen wird.
-                                <br>
-                                Die legendäre Tosca mit Maria Callas saß in seinem Hinterkopf, als sich José Cortés mit
-                                dem Stoff auseinandersetzte. Er
-                                beschäftigte sich mit dem Drama La Tosca von Victorien Sardou, das Giuseppe Giacosa und
-                                Luigi Illica als Grundlage für
-                                das Libretto nutzten, und vertiefte sich in die Psyche der Floria Tosca. Das
-                                Unausgesprochene sichtbar machen, gilt
-                                seine Absicht.
-                                <br>
-                                Es sind komplexe Emotionen wie Liebe, Eifersucht, Hass, Angst und Verzweiflung, die
-                                Floria Toscas Denken bestimmen und
-                                in der Musik Gestalt annehmen. Puccini packte alle Facetten menschlicher Untiefen in die
-                                Partitur. Nicht genug für José
-                                Cortés. Er will die Turbulenzen im Kopf der Floria Tosca konkret abbilden, lenkt den
-                                Blick auf überflüssige
-                                Nebensächlichkeiten und führt stumme Charaktere ein, die nicht im Libretto vorgesehen
-                                sind.
-                                <br>
-                                Gleich im ersten Akt taucht in der Kirche die Marchesa Attavanti, Angelottis Schwester
-                                auf. Im Schatten einer
-                                Kirchensäule küsst sie Mario Cavaradossi voller Leidenschaft und bestätigt damit die
-                                Affäre, die Tosca nur laut Libretto
-                                vermutet. Und weil die Königin Maria Karolina in Sardous Bühnenstück die personifizierte
-                                Skrupellosigkeit verkörpert,
-                                stellt José Cortés sie an die Seite von Scarpia, als sei sie die eigentlich Böse. Im
-                                zweiten Akt auf dem emotional und
-                                dramatisch stärksten Höhepunkt bevölkern zwei weitere Tosca-Double die Szenerie, die
-                                eine frömmelnd, die andere frivol,
-                                um dem Publikum zu erklären, warum die singende Tosca schließlich nicht aus Notwehr zum
-                                Messer greift, sondern zur
-                                Mörderin wird. Danach entscheidet sich Cortés schlüssig für kein Aufbahren, keine Reue.
-                                Aber auch keine Liebesszene und
-                                keinen Sieg.
-                                <br>
-                                Historisch gesehen spielt Tosca um 1800 an konkreten Orten in Rom in einer Zeit
-                                politischer Instabilität. Die Spielorte
-                                sind bekannte Gebäude, die Kirche Sant´Andrea della Valle, der Palazzo Farnese, die
-                                Engelsburg. Bühnenbildner Manuel La
-                                Caste reduziert auf ein Minimum an Requisiten, um die Räume zu definieren und nutzt mit
-                                Martin Siemann an seiner Seite
-                                die effektvollen Mittel aus Licht und Schatten für das Atmosphärische. Kunstvoll
-                                arrangiert, sorgsam komponiert atmen
-                                diese Räume Einsamkeit, Verlorenheit, Hoffnungslosigkeit und Untergang, durchsetzt von
-                                wenigen Momenten
-                                lichtdurchfluteter Verklärung.
-                                <br>
-                                Puccini war ein Meister darin, Grausamkeiten durch den Kontrast zu relativ harmloser
-                                Sphärenmusik zu verstärken, vor
-                                allem wenn Gut und Böse sich im Ensemble zusammenfinden müssen. Das gilt vor allem für
-                                den zweiten Akt. Doch so sehr
-                                Massimo Cavalletti sich in der Rolle des Baron Scarpia auch gefiel, entbehrte er jenes
-                                Maß an Bedrohlichkeit, das auch
-                                voraussetzt, bis an die Grenzen der Stimme heranzugehen. Otar Jorjikia als Cavaradossis
-                                legte hingegen alle Kraft in
-                                seinen Ausruf „Vittoria!“. So emotional und stimmgewaltig, wie es Otar Jorjikia
-                                intonierte, verfehlte es seine Wirkung
-                                nicht. Dies überraschte um so mehr, da Otar Jorjikia die berühmte Arie „Recondita
-                                armonia“ gleich im ersten Akt korrekt,
-                                aber kräftesparend zum Besten gab, im Finale zunächst stimmlich einbrach, im Duett „O
-                                dolci mani“ alle Konzentration
-                                aufbrachte, um die leisen und starken Töne mit aller Zärtlichkeit auszugestalten.
-                                <br>
-                                Ganz anders Sinéad Campbell Wallace. Sie verfügt über die Technik, die Kraft und das
-                                Gespür für eine messerscharfe
-                                Charakteristik. Fließend gelingen ihr die Kantilenen, souverän gestaltet sie mit subtil
-                                feinsten Schattierungen und
-                                Strahlkraft bis in extreme Höhen, um darstellerisch intensiv das Gefühlschaos der Diva
-                                Floria Tosca mit aller gebotenen
-                                Leidenschaftlichkeit und emotionalen Tiefe rückhaltlos auszudrücken. Und das mit fast
-                                unendlichem Atem. Mit Toscas Gebet
-                                „Vissi d´arte“ elektrisierte sie alle Premierenbesucher. Ihre Interpretation voller
-                                spannungsgeladener Expressivität wie
-                                intimer Intensität ist selten. Ihren ersten Tosca Erfolg feierte Sinéad Campbell Wallace
-                                mit Chin Chao Lin am
-                                Dirigentenpult 2019 unter freiem Himmel in Regensburg. 2023 wurde die irische
-                                Ausnahme-Sopranistin für diese Partie an
-                                der English National Opera mit dem Olivier Award ausgezeichnet. Chin Chao Lin, derzeit
-                                erster Kapellmeister am
-                                Staatstheater Wiesbaden und ab der kommenden Spielzeit GMD am Stadttheater Klagenfurt,
-                                überzeugte seinerseits am Pult im
-                                Orchestergraben. Ohne Scheu vor charakterisierenden Effekten und donnernden Klängen
-                                verstärkte er die Wirkung bizarrer
-                                Süßlichkeit wie angewandter Grausamkeiten und tiefenpsychologischer Deutung, ohne die
-                                filigranen Details zu
-                                vernachlässigen. Selten gelingt diese Partitur so kompromisslos dramatisch und
-                                mitreißend. Das Hessische
-                                Staattheaterorchester musizierte in Höchstform.
-                            </div>
-                            <div class="review-source">Christiane Franke - Klassik.com</div>
-                        </div>
-
-
-                    </div>
-
-                </div>
-            </div>
-    </div>
+    <section class="hero" id="hero">
+        <div class="hero-bg" style="background-image:url('assets/lovelease_bed.webp');"></div>
+        <div class="hero-wash"></div>
+        <div class="hero-inner">
+            <div class="hero-eyebrow">Opera Director</div>
+            <h1>José Cortés</h1>
+        </div>
     </section>
 
-    <section class="contact" id="contact">
-        <div class="section-container contact-container">
-            <div class="section-label">CONTACT</div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-header">
-                        <div class="contact-name">JOSÉ CORTES</div>
-                        <div class="contact-role">opera director</div>
+    <section id="projects">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <h2 data-i18n-head>Productions</h2>
+            </div>
+            <div class="productions-list">
+                <a class="production-row reveal" href="./projects/tosca/"
+                    aria-label="Tosca">
+                    <div class="production-media" style="background-image:url('assets/tosca_main.jpg');background-position:center center;"></div>
+                    <div class="production-wash"></div>
+                    <div class="production-copy">
+                        <div class="production-title">Tosca</div>
+                        <div class="production-meta" data-en="Puccini &middot; Staatstheater Wiesbaden, 2025" data-de="Puccini &middot; Staatstheater Wiesbaden, 2025">Puccini &middot; Staatstheater Wiesbaden, 2025</div>
                     </div>
-                    <div class="contact-details">
-                        <div><a href="mailto:jose.cortes@web.de">jose.cortes@web.de</a><br>+49
-                            171 185 8767</div>
+                </a>
+
+                <a class="production-row reveal" href="./projects/answering_machine/"
+                    aria-label="The Answering Machine">
+                    <div class="production-media" style="background-image:url('assets/answering_machine/answering_machine_cry.png');background-position:center 26%;"></div>
+                    <div class="production-wash"></div>
+                    <div class="production-copy">
+                        <div class="production-title">The Answering Machine</div>
+                        <div class="production-meta" data-en="Feature Film &middot; Directorial debut, 2025" data-de="Spielfilm &middot; Regiedebüt, 2025">Feature Film &middot; Directorial debut, 2025</div>
                     </div>
-                    <!-- <div class="contact-rep">
-                        <span class="contact-rep-label">representation:</span> Agency Sermodus<br>
-                        mikel@sermodus.com
-                    </div> -->
-                </div>
-                <div class="contact-image">
-                    <img src="assets/contact_image.webp" alt="José Cortés at work" loading="lazy">
+                </a>
+
+                <a class="production-row reveal" href="./projects/lovelease/"
+                    aria-label="Lovelease">
+                    <div class="production-media" style="background-image:url('assets/lovelease_bed.webp');background-position:center 75%;"></div>
+                    <div class="production-wash"></div>
+                    <div class="production-copy">
+                        <div class="production-title">Lovelease</div>
+                        <div class="production-meta" data-en="World premiere &middot; Deutsche Oper Berlin" data-de="Uraufführung &middot; Deutsche Oper Berlin">World premiere &middot; Deutsche Oper Berlin</div>
+                    </div>
+                </a>
+
+                <a class="production-row reveal" href="./projects/fledermaus/"
+                    aria-label="Die Fledermaus">
+                    <div class="production-media" style="background-image:url('assets/fledermaus_main.jpg');background-position:center 33%;"></div>
+                    <div class="production-wash"></div>
+                    <div class="production-copy">
+                        <div class="production-title">Die Fledermaus</div>
+                        <div class="production-meta" data-en="Strauss &middot; HfM Hanns Eisler" data-de="Strauss &middot; HfM Hanns Eisler">Strauss &middot; HfM Hanns Eisler</div>
+                    </div>
+                </a>
+
+                <a class="production-row reveal" href="./projects/boheme/"
+                    aria-label="La Bohème">
+                    <div class="production-media" style="background-image:url('assets/boheme/boheme_9.webp');background-position:center 60%;"></div>
+                    <div class="production-wash"></div>
+                    <div class="production-copy">
+                        <div class="production-title">La Bohème</div>
+                        <div class="production-meta" data-en="Puccini &middot; HfM Hanns Eisler" data-de="Puccini &middot; HfM Hanns Eisler">Puccini &middot; HfM Hanns Eisler</div>
+                    </div>
+                </a>
+
+                <a class="production-row reveal" href="./projects/cosi/"
+                    aria-label="Così fan tutte">
+                    <div class="production-media" style="background-image:url('assets/cosi/cosi_main.webp');background-position:center 19%;"></div>
+                    <div class="production-wash"></div>
+                    <div class="production-copy">
+                        <div class="production-title">Così fan tutte</div>
+                        <div class="production-meta" data-en="Mozart &middot; HfM Hanns Eisler" data-de="Mozart &middot; HfM Hanns Eisler">Mozart &middot; HfM Hanns Eisler</div>
+                    </div>
+                </a>
+
+                <a class="production-row reveal" href="./projects/bayreuth/"
+                    aria-label="Festspielnacht am Goldbergsee">
+                    <div class="production-media" style="background-image:url('assets/bayreuth/goldberg_5.webp');background-position:center center;"></div>
+                    <div class="production-wash"></div>
+                    <div class="production-copy">
+                        <div class="production-title">Festspielnacht am Goldbergsee</div>
+                        <div class="production-meta" data-en="Bayreuth Festival &middot; Orchestra &amp; soloists" data-de="Bayreuther Festspiele &middot; Orchester &amp; Solisten">Bayreuth Festival &middot; Orchestra &amp; soloists</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="biography">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <h2 data-i18n-head>Biography</h2>
+            </div>
+            <div class="biography-grid">
+                <div class="bio-frame reveal" style="background-image:url('assets/jose_headshot_dec_25.webp');"></div>
+                <div class="bio-text reveal">
+                    <p>Born in Puerto Rico, José Cortés completed the Ofelia D’Acosta Acting Academy as well as the Escuela Central de Artes Visuales in San Juan. He studied Spanish literature at the University of Puerto Rico and gained diverse artistic experience in dance, theater, and film.</p>
+                    <p>His path then led him to Berlin, where he completed a bachelor’s and master’s degree in opera singing. He worked as an assistant director at the Deutsche Oper Berlin, the Staatsoper Berlin, and the Oper Graz, among others. This was followed by seminars and directing workshops with Tatjana Gürbaca, Claus Guth, Hans Neuenfels, Nadja Loschky, and Katharina Wagner.</p>
+                    <p>His productions include La Bohème, Così fan tutte, Die Fledermaus, La Calisto, the world premiere of Lovelease, as well as the first festival performance at Goetheplatz with the orchestra and soloists of the Bayreuth Festival.</p>
+                    <p>On March 15, 2025, Cortés makes his debut with Puccini’s Tosca at the Staatstheater Wiesbaden.</p>
+                    <p>In 2025, Cortés made his debut as a film director with The Answering Machine.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <button id="backToTop" title="Go to top">↑</button>
+    <section id="reviews">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <h2 data-i18n-head>Press</h2>
+            </div>
+            <div class="press-list">
+                <div class="press-entry reveal" tabindex="0" role="button"
+                    data-title="Tosca — 2025 — Wiesbaden" data-title-de="Tosca — 2025 — Wiesbaden"
+                    data-body="Of all works, it is Giacomo Puccini’s “Tosca” — one of the top ten operas worldwide — with which José Cortés successfully makes his directing debut at the Staatstheater Wiesbaden. The audience celebrates the premiere with rapturous applause and standing ovations. The prime catalysts are Chin Chao Lin and Sinéad Campbell Wallace. The Taiwanese conductor and the Irish soprano share a Tosca history and know how to unleash blazing expressivity with great subtlety. Cortés aligns his concept of a profound psychological portrait with this and accepts that much is sung at the footlights.
 
-    <footer class="footer">
-        <div class="footer-links">
-            <a href="./imprint/" class="footer-link">imprint</a>
-            <a href="./privacy/" class="footer-link">privacy policy</a>
+The legendary Tosca with Maria Callas was in the back of his mind as Cortés approached the work. He engaged with Victorien Sardou’s drama La Tosca, which Giuseppe Giacosa and Luigi Illica used as the basis for the libretto, and delved into the psyche of Floria Tosca. His aim is to make the unspoken visible.
+
+It is complex emotions — love, jealousy, hatred, fear, and despair — that govern Floria Tosca’s thinking and take shape in the music. Puccini captured every facet of human depths in the score. Not enough for Cortés. He wants to depict the turmoil inside Floria Tosca’s head concretely, directing the gaze to superfluous trifles and introducing mute characters that are not provided for in the libretto.
+
+Right in the first act, Marchesa Attavanti, Angelotti’s sister, appears in the church. In the shadow of a pillar she kisses Mario Cavaradossi passionately, confirming the affair that Tosca only suspects according to the libretto. And because Queen Maria Carolina embodies ruthlessness in Sardou’s play, Cortés places her at Scarpia’s side as if she were the true villain. In the second act, at the emotional and dramatic peak, two further Tosca doubles populate the stage — one pious, the other frivolous — to explain to the audience why the singing Tosca ultimately does not stab in self‑defense but becomes a murderer. Afterwards, Cortés decisively opts for neither a laying‑out, nor remorse — nor a love scene, nor victory.
+
+Historically, Tosca takes place around 1800 at concrete locations in Rome during a time of political instability. The settings are well‑known buildings: the church of Sant’Andrea della Valle, the Palazzo Farnese, the Castel Sant’Angelo. Set designer Manuel La Caste reduces props to a minimum in order to define the spaces and, together with Martin Siemann, uses the effective means of light and shadow for atmosphere. Artfully arranged and carefully composed, these spaces breathe loneliness, abandonment, hopelessness, and downfall — shot through with a few moments of radiant transfiguration.
+
+Puccini was a master at intensifying cruelties through the contrast with seemingly harmless ‘spherical’ music, especially when good and evil must come together in ensemble. This is especially true of the second act. As much as Massimo Cavalletti enjoyed himself in the role of Baron Scarpia, he lacked the requisite sense of menace that also requires pushing the voice to its limits. By contrast, Otar Jorjikia poured all his strength into Cavaradossi’s cry of “Vittoria!” — so emotional and powerful that it did not miss its mark. This was all the more surprising because Jorjikia delivered the famous aria “Recondita armonia” in the first act correctly but with economy, faltered vocally at first in the finale, and then, in the duet “O dolci mani,” mustered all his concentration to shape the soft and strong tones with the utmost tenderness.
+
+Quite different was Sinéad Campbell Wallace. She possesses the technique, power, and instinct for a razor‑sharp characterisation. The cantilenas flow with ease; she shapes with subtly finest shadings and brilliance even into extreme heights, acting with intense expression to render the diva Floria Tosca’s chaos of feeling with all the requisite passion and emotional depth — unreservedly, with seemingly endless breath. With Tosca’s prayer “Vissi d’arte” she electrified all the premiere‑goers. Her interpretation, full of suspenseful expressivity and intimate intensity, is rare. She first celebrated a Tosca success with Chin Chao Lin at the podium in 2019 under the open sky in Regensburg. In 2023, the Irish exceptional soprano was awarded the Olivier Award for this role at English National Opera. Chin Chao Lin, currently First Kapellmeister at Staatstheater Wiesbaden and, from the coming season, General Music Director at Stadttheater Klagenfurt, in turn convinced in the pit. Unafraid of characterising effects and thunderous sonorities, he heightened the impact of bizarre sweetness, applied cruelties, and deep‑psychological readings without neglecting the filigree details. Seldom does this score succeed so uncompromisingly dramatically and compellingly. The Hessisches Staatstheater orchestra performed at the highest level." data-body-de="Ausgerechnet mit Giacomo Puccinis „Tosca“, einer der Top-Ten Opernwerke weltweit, meistert José Cortés sein Regiedebüt am Staatstheater Wiesbaden. Das Publikum feiert die Premiere mit frenetischem Applaus und Standing Ovations. Ursächlicher Auslöser dafür sind Chin Chao Lin und Sinéad Campbell Wallace. Der taiwanische Dirigent und die irische Sopranistin haben eine gemeinsame Tosca-Geschichte und verstehen sich darauf, glühende Expressivität überaus subtil zu entfesseln. José Cortés stimmt sein Konzept einer tiefgreifenden Seelenschau darauf ab und nimmt dabei in Kauf, dass viel an der Rampe gesungen wird.
+
+Die legendäre Tosca mit Maria Callas saß in seinem Hinterkopf, als sich José Cortés mit dem Stoff auseinandersetzte. Er beschäftigte sich mit dem Drama La Tosca von Victorien Sardou, das Giuseppe Giacosa und Luigi Illica als Grundlage für das Libretto nutzten, und vertiefte sich in die Psyche der Floria Tosca. Das Unausgesprochene sichtbar machen, gilt seine Absicht.
+
+Es sind komplexe Emotionen wie Liebe, Eifersucht, Hass, Angst und Verzweiflung, die Floria Toscas Denken bestimmen und in der Musik Gestalt annehmen. Puccini packte alle Facetten menschlicher Untiefen in die Partitur. Nicht genug für José Cortés. Er will die Turbulenzen im Kopf der Floria Tosca konkret abbilden, lenkt den Blick auf überflüssige Nebensächlichkeiten und führt stumme Charaktere ein, die nicht im Libretto vorgesehen sind.
+
+Gleich im ersten Akt taucht in der Kirche die Marchesa Attavanti, Angelottis Schwester auf. Im Schatten einer Kirchensäule küsst sie Mario Cavaradossi voller Leidenschaft und bestätigt damit die Affäre, die Tosca nur laut Libretto vermutet. Und weil die Königin Maria Karolina in Sardous Bühnenstück die personifizierte Skrupellosigkeit verkörpert, stellt José Cortés sie an die Seite von Scarpia, als sei sie die eigentlich Böse. Im zweiten Akt auf dem emotional und dramatisch stärksten Höhepunkt bevölkern zwei weitere Tosca-Double die Szenerie, die eine frömmelnd, die andere frivol, um dem Publikum zu erklären, warum die singende Tosca schließlich nicht aus Notwehr zum Messer greift, sondern zur Mörderin wird. Danach entscheidet sich Cortés schlüssig für kein Aufbahren, keine Reue. Aber auch keine Liebesszene und keinen Sieg.
+
+Historisch gesehen spielt Tosca um 1800 an konkreten Orten in Rom in einer Zeit politischer Instabilität. Die Spielorte sind bekannte Gebäude, die Kirche Sant´Andrea della Valle, der Palazzo Farnese, die Engelsburg. Bühnenbildner Manuel La Caste reduziert auf ein Minimum an Requisiten, um die Räume zu definieren und nutzt mit Martin Siemann an seiner Seite die effektvollen Mittel aus Licht und Schatten für das Atmosphärische. Kunstvoll arrangiert, sorgsam komponiert atmen diese Räume Einsamkeit, Verlorenheit, Hoffnungslosigkeit und Untergang, durchsetzt von wenigen Momenten lichtdurchfluteter Verklärung.
+
+Puccini war ein Meister darin, Grausamkeiten durch den Kontrast zu relativ harmloser Sphärenmusik zu verstärken, vor allem wenn Gut und Böse sich im Ensemble zusammenfinden müssen. Das gilt vor allem für den zweiten Akt. Doch so sehr Massimo Cavalletti sich in der Rolle des Baron Scarpia auch gefiel, entbehrte er jenes Maß an Bedrohlichkeit, das auch voraussetzt, bis an die Grenzen der Stimme heranzugehen. Otar Jorjikia als Cavaradossis legte hingegen alle Kraft in seinen Ausruf „Vittoria!“. So emotional und stimmgewaltig, wie es Otar Jorjikia intonierte, verfehlte es seine Wirkung nicht. Dies überraschte um so mehr, da Otar Jorjikia die berühmte Arie „Recondita armonia“ gleich im ersten Akt korrekt, aber kräftesparend zum Besten gab, im Finale zunächst stimmlich einbrach, im Duett „O dolci mani“ alle Konzentration aufbrachte, um die leisen und starken Töne mit aller Zärtlichkeit auszugestalten.
+
+Ganz anders Sinéad Campbell Wallace. Sie verfügt über die Technik, die Kraft und das Gespür für eine messerscharfe Charakteristik. Fließend gelingen ihr die Kantilenen, souverän gestaltet sie mit subtil feinsten Schattierungen und Strahlkraft bis in extreme Höhen, um darstellerisch intensiv das Gefühlschaos der Diva Floria Tosca mit aller gebotenen Leidenschaftlichkeit und emotionalen Tiefe rückhaltlos auszudrücken. Und das mit fast unendlichem Atem. Mit Toscas Gebet „Vissi d´arte“ elektrisierte sie alle Premierenbesucher. Ihre Interpretation voller spannungsgeladener Expressivität wie intimer Intensität ist selten. Ihren ersten Tosca Erfolg feierte Sinéad Campbell Wallace mit Chin Chao Lin am Dirigentenpult 2019 unter freiem Himmel in Regensburg. 2023 wurde die irische Ausnahme-Sopranistin für diese Partie an der English National Opera mit dem Olivier Award ausgezeichnet. Chin Chao Lin, derzeit erster Kapellmeister am Staatstheater Wiesbaden und ab der kommenden Spielzeit GMD am Stadttheater Klagenfurt, überzeugte seinerseits am Pult im Orchestergraben. Ohne Scheu vor charakterisierenden Effekten und donnernden Klängen verstärkte er die Wirkung bizarrer Süßlichkeit wie angewandter Grausamkeiten und tiefenpsychologischer Deutung, ohne die filigranen Details zu vernachlässigen. Selten gelingt diese Partitur so kompromisslos dramatisch und mitreißend. Das Hessische Staattheaterorchester musizierte in Höchstform."
+                    data-source="Christiane Franke — Klassik.com" data-source-de="Christiane Franke — Klassik.com">
+                    <p class="press-quote">Of all works, it is Giacomo Puccini’s “Tosca” — one of the top ten operas worldwide — with which José Cortés successfully makes his directing debut at the Staatstheater Wiesbaden.</p>
+                    <div class="press-attr">Christiane Franke — Klassik.com</div>
+                    <span class="press-arrow">&rarr;</span>
+                </div>
+
+                <div class="press-entry reveal" tabindex="0" role="button"
+                    data-title="The Answering Machine - 2025" data-title-de="The Answering Machine - 2025"
+                    data-body="Cortés&#x27;s premise is spare - a woman, an empty home, and the echoes of what was - yet
+within this austerity he locates something vast and symphonic.
+Each gesture, each pause, feels choreographed to the rhythm of loss.
+
+The film becomes less a narrative than a composition: a cinematic sonata in minor key,
+written for light, breath, and the trembling of human will. Cortés&#x27;s direction balances
+the
+cerebral and the sensual with remarkable poise. His camera neither intrudes nor
+embellishes; it watches, almost reverently, as the performer slowly sheds her mask-her
+art and her suffering merging into one. The editing is musical - cuts arrive like
+inhalations
+between verses, allowing emotion to resonate in the air.
+
+There is a deliberate theatricality here, as if the frame itself were a proscenium arch;
+but
+instead of distancing us, it transforms the screen into an intimate confessional where
+performance and truth become indistinguishable. Ivon Mateljan&#x27;s portrayal is nothing
+short of alchemical. Her face becomes a terrain of micro-expressions, every flicker of
+doubt or resignation caught in chiaroscuro light.
+
+Beneath its minimalist exterior, The Answering Machine is a meditation on the
+existential
+cost of artistry. Cortés refuses sentimentality; he offers, instead, revelation. The
+film
+suggests that creation is not simply an act of expression, but an act of endurance - a
+way
+of surviving the silence after the curtain falls. In that silence, Cortés achieves what
+few
+filmmakers dare: he transforms solitude into symphony." data-body-de="Cortés’ Prämisse ist schlicht – eine Frau, ein leeres Zuhause und die Echos dessen, was
+einmal war – und doch entdeckt
+er innerhalb dieser Strenge etwas Weitreichendes und Symphonisches.Jede Geste, jede
+Pause wirkt wie zum Rhythmus des
+Verlusts choreografiert.
+
+Der Film ist weniger zur Erzählung als viel mehr zu einer Komposition: eine filmische
+Sonate in Moll, geschrieben für
+Licht, Atem und das Zittern des menschlichen Willens. Cortés’ Regie balanciert das
+Intellektuelle und das Sinnliche mit
+bemerkenswerter Souveränität. Seine Kamera dringt weder ein noch schmückt sie aus; sie
+beobachtet- fast ehrfürchtig- wie
+die Darstellerin langsam ihre Maske ablegt – Kunst und Leiden verschmelzen zu einer
+Einheit. Der Schnitt ist musikalisch
+– Schnitte kommen wie Atemzüge zwischen Versen und lassen Emotion in der Luft
+nachklingen.
+
+Eine bewusste Theatralität liegt über allem, als wäre der Rahmen selbst ein Proszenium;
+doch anstatt Distanz zu
+schaffen, verwandelt sich die Leinwand in ein intimes Bekenntnis, in dem Aufführung und
+Wahrheit ununterscheidbar
+werden. Ivon Mateljans Darstellung ist geradezu alchemistisch. Ihr Gesicht wird zur
+Landschaft mikrofeiner
+Ausdrucksformen, jedes Aufflackern von Zweifel oder Resignation wird im
+Chiaroscuro-Licht eingefangen.
+
+Hinter seiner minimalistischen Oberfläche ist The Answering Machine eine Meditation über
+die existenziellen Kosten von
+Kunst. Cortés verzichtet auf Sentimentalität; stattdessen bietet er Offenbarung. Der
+Film deutet an, dass künstlerisches
+Schaffen nicht bloß ein Akt des Ausdrucks ist, sondern ein Akt des Durchhaltens – ein
+Überlebensmechanismus für die
+Stille nach dem Fallen des Vorhangs. In dieser Stille gelingt Cortés, was sich nur
+wenige Filmemacher wagen: Er
+verwandelt Einsamkeit in einer Symphonie."
+                    data-source="The Hollywood International Indie Film &amp; Screenplay Awards" data-source-de="The Hollywood International Indie Film &amp; Screenplay Awards">
+                    <p class="press-quote">Cortés&#x27;s premise is spare - a woman, an empty home, and the echoes of what was - yet</p>
+                    <div class="press-attr">The Hollywood International Indie Film &amp; Screenplay Awards</div>
+                    <span class="press-arrow">&rarr;</span>
+                </div>
+
+                <div class="press-entry reveal" tabindex="0" role="button"
+                    data-title="The Answering Machine - 2025" data-title-de="The Answering Machine - 2025"
+                    data-body="José Cortes&#x27;s The Answering Machine opens like a confessional whispered into the dark.
+It invites us into the quiet ache of a life once filled with applause— a German opera
+singer, trapped between the grandeur of her art and the silence of her home. What
+follows is not merely a film, but a recital of vulnerability, an aria of pain, and,
+ultimately, a reclamation of self.
+
+The premise is deceptively simple: a woman, haunted by expectation. The expectations
+of her family. The demands of the opera world. The
+unrelenting standard she has built within herself. And yet, in the stillness of her
+domestic solitude, something unravels -and something else begins to mend. Cortes
+films this transformation with intimacy. The camerawork is assured, the editing taut.
+Each cut lands like a breath between phrases of music. Yet there is an unmistakable
+theatrical quality to it all-The Answering Machine often feels like a filmed monodrama,
+a
+stage performance translated into cinema. This isn&#x27;t a flaw so much as a choice; the
+boundaries between theatre and film blur, creating a hybrid space where performance
+and confession become one. At the center of it all stands Ivon Mateljan, and she is
+extraordinary. Her singing is exquisite, but it&#x27;s her silence that devastates. She wears
+her
+fragility like an aria - controlled, expressive, utterly human. The camera adores her
+not
+for her perfection, but for her willingness to crumble before it. Few performances dare
+to
+be this naked.
+
+What begins as a story of failure becomes something far more resonant: the courage to
+start again. Cortés doesn&#x27;t offer easy catharsis or melodrama. Instead, he gives us a
+portrait of quiet reinvention, where art becomes a mirror for pain-and a passage through
+it. By the end, The Answering Machine leaves us not with applause, but with a kind of
+reverent silence. The performance is over, but the echo remains." data-body-de="José Cortés’ The Answering Machine beginnt wie ein ins Dunkel geflüstertes Geständnis.
+Er lädt uns ein in den stillen
+Schmerz eines einst vom Applaus erfüllten Lebens – eine deutsche Opernsängerin, gefangen
+zwischen der Größe ihrer Kunst
+und der Stille ihres Zuhauses. Was folgt, ist nicht nur ein Film, sondern eine Erzählung
+von Verletzlichkeit, eine Arie
+des Schmerzes und letztlich ein Akt der Selbstbehauptung.
+
+Das Ausgangsszenario ist trügerisch einfach: eine Frau, heimgesucht von Erwartungen. Die
+Erwartungen ihrer Familie. Die
+Anforderungen der Opernwelt. Der unerbittliche Maßstab, den sie in sich selbst errichtet
+hat. Und doch – in der Stille
+ihrer häuslichen Einsamkeit – beginnt sich etwas zu lösen. Und etwas anderes beginnt zu
+heilen. Cortés filmt diesen
+Wandlungsprozess mit großer Intimität. Die Kameraführung ist souverän, der Schnitt
+präzise. Jeder Schnitt wirkt wie ein
+Atemzug zwischen musikalischen Phrasen. Zugleich hat das Ganze eine unverkennbare
+Theatralik – The Answering Machine
+fühlt sich oft an wie ein gefilmtes Monodrama, eine Bühnenperformance, übersetzt für das
+Kino. Das ist kein Mangel
+sondern eine bewusste Entscheidung; die Grenzen zwischen Theater und Film verschwimmen,
+es entsteht ein hybrider Raum,
+in dem Performance und Bekenntnis eins werden. Im Zentrum steht Ivon Mateljan – und sie
+ist außergewöhnlich. Ihr Gesang
+ist exquisit, doch es ist ihr Schweigen, das erschüttert. Sie trägt ihre
+Zerbrechlichkeit wie eine Arie – kontrolliert,
+ausdrucksstark, zutiefst menschlich. Die Kamera liebt sie nicht für ihre Perfektion,
+sondern wegen ihrer Bereitschaft,
+vor ihr zu zerbrechen. Wenige Darstellungen wagen sich an diese Nacktheit.
+
+Was als Geschichte des Scheiterns beginnt, wird zu etwas viel Tieferem: dem Mut, neu zu
+beginnen. Cortés bietet keine
+einfache Katharsis oder Melodramatik. Stattdessen schenkt er uns ein stilles Porträt der
+Neuerfindung- wo Kunst zum
+Spiegel des Schmerzes wird, und zu einem Weg hindurch. Am Ende hinterlässt The Answering
+Machine keinen Applaus, sondern
+eine Art ehrfürchtiges Schweigen. Die Vorstellung ist vorbei, doch der Nachhall bleibt."
+                    data-source="The New York Film &amp; Cinematography Awards" data-source-de="The New York Film &amp; Cinematography Awards">
+                    <p class="press-quote">It invites us into the quiet ache of a life once filled with applause—a German opera singer, trapped between the grandeur of her art and the silence of her home.</p>
+                    <div class="press-attr">The New York Film &amp; Cinematography Awards</div>
+                    <span class="press-arrow">&rarr;</span>
+                </div>
+            </div>
         </div>
-        <div class="footer-copyright">©2025 JOSÉ CORTES</div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="wrap">
+            <h2 class="contact-title" data-i18n-head>Contact</h2>
+            <div class="contact-row">
+                <div class="contact-details reveal">
+                    <div class="role">Opera Director</div>
+                    <div class="field"><a href="mailto:jose.cortes@web.de">jose.cortes@web.de</a></div>
+                    <div class="field">+49 171 185 8767</div>
+                </div>
+                <div class="contact-photo reveal" style="background-image:url('assets/contact_image.webp');"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="flinks">
+            <a href="./imprint/">imprint</a>
+            <a href="./privacy/">privacy policy</a>
+        </div>
+        <div>&copy;2025 JOSÉ CORTÉS</div>
     </footer>
+
+    <div class="review-modal" id="reviewModal" aria-hidden="true">
+        <div class="review-modal-backdrop"></div>
+        <div class="review-modal-panel">
+            <button class="review-modal-close" id="reviewModalClose">Close</button>
+            <h3 class="review-modal-title" id="reviewModalTitle"></h3>
+            <p class="review-modal-body" id="reviewModalBody"></p>
+            <div class="review-modal-source" id="reviewModalSource"></div>
+        </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
