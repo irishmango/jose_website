@@ -30,7 +30,6 @@
     .section-container,
     .projects-container,
     .reviews-container,
-    .calender-container,
     .contact-container,
     .bio-container {
         margin: 32px;
@@ -169,30 +168,6 @@
 
 
 
-
-
-
-
-    /* Calendar layout → column */
-    .calender-content {
-        flex-direction: column;
-        gap: 24px;
-    }
-
-    .calender-list {
-        gap: 28px;
-    }
-
-    .calender-event {
-        gap: 16px;
-    }
-
-    .calender-image-placeholder {
-        width: 100%;
-        height: 220px;
-        margin: 16px 0 0 0;
-        /* remove left margin from desktop */
-    }
 
 
 

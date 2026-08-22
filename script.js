@@ -297,8 +297,6 @@ if (closeBtn) {
         if (bio) bio.textContent = t.nav.BIOGRAPHY;
         const projects = findNavLink('#projects');
         if (projects) projects.textContent = t.nav.PROJECTS;
-        const cal = findNavLink('#calender');
-        if (cal) cal.textContent = t.nav.CALENDER;
         const reviews = findNavLink('#reviews');
         if (reviews) reviews.textContent = t.nav.REVIEWS;
         const contact = findNavLink('#contact');
