@@ -337,7 +337,6 @@ section { padding: 120px 40px; }
 }
 @media (max-width: 700px) {
   .more-item { flex-basis: 120px; height: 160px; }
-  .more-item .title { opacity: 1; transform: none; }
 }
 
 /* Note: imprint/ and privacy/ are out of scope for this redesign. They keep
@@ -371,4 +370,16 @@ section { padding: 120px 40px; }
 
   .more-item:hover { flex-basis: 220px; filter: grayscale(0) brightness(0.9); }
   .more-item:hover .title { opacity: 1; transform: translateY(0); }
+}
+
+/* ============ TOUCH — no hover, so show the "revealed" state by default ============
+   Without a pointer that can hover, these elements would otherwise be stuck
+   permanently in their dim/untitled resting state. */
+@media (hover: none) {
+  .production-row .production-media { filter: grayscale(0) brightness(0.92) contrast(1.02); }
+  .production-row .production-wash { opacity: 1; }
+  .production-row .production-copy { opacity: 1; transform: translateY(0); }
+
+  .more-item { filter: grayscale(0) brightness(0.9); }
+  .more-item .title { opacity: 1; transform: translateY(0); }
 }
