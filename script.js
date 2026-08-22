@@ -26,6 +26,24 @@
     sections.forEach((s) => observer.observe(s.el));
 })();
 
+// ============ Mobile hamburger menu ============
+(function () {
+    const burger = document.getElementById('navBurger');
+    const links = document.querySelector('.site-navbar-links');
+    if (!burger || !links) return;
+
+    function setOpen(open) {
+        links.classList.toggle('open', open);
+        burger.setAttribute('aria-expanded', String(open));
+    }
+
+    burger.addEventListener('click', () => setOpen(!links.classList.contains('open')));
+    links.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && links.classList.contains('open')) setOpen(false);
+    });
+})();
+
 // ============ Scroll reveal ============
 (function () {
     const items = document.querySelectorAll('.reveal');
